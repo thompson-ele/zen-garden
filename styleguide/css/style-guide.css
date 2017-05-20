@@ -187,8 +187,8 @@
       border-left: 20px solid transparent;
       border-right: 20px solid transparent;
       border-bottom: 10px solid #65bc4c; }
-    .btn.btn-a11y:before.no-touch .btn.btn-a11y:hover {
-      background: #8cce7a; }
+      .no-touch .btn.btn-a11y:before:hover {
+        background: #8cce7a; }
     .btn.btn-a11y:after {
       content: "";
       position: absolute;
@@ -199,8 +199,8 @@
       border-left: 20px solid transparent;
       border-right: 20px solid transparent;
       border-top: 10px solid #65bc4c; }
-    .btn.btn-a11y:after.no-touch .btn.btn-a11y:hover {
-      background: #8cce7a; }
+      .no-touch .btn.btn-a11y:after:hover {
+        background: #8cce7a; }
     .btn.btn-a11y .btn-a11y-txt {
       position: absolute;
       -webkit-transform: rotate(-130deg);
