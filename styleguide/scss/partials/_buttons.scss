@@ -14,7 +14,10 @@ $secondary-font: 'Luckiest Guy', cursive;
 	.no-touch &:hover {
 	}
 
-	&.btn-html {      
+	&.btn-html {   
+        margin: 0px 0px 0px 50px;       
+        float:left;
+        display:block;
         padding:0;
         width: 0;
 	    height: 0;
@@ -43,6 +46,9 @@ $secondary-font: 'Luckiest Guy', cursive;
 	}
 
 	&.btn-css {
+        margin: 0px 0px 0px 50px;
+        float:left;
+        display:block;
         width: 40px;
 	    height: 40px;
 	    background: $main-2;
@@ -62,6 +68,9 @@ $secondary-font: 'Luckiest Guy', cursive;
 	}
 
 	&.btn-cc {
+        margin: 0px 0px 0px 50px;
+        float:left;
+        display:block;
         background:none;
         border-top:none;
         position:relative;
@@ -89,6 +98,9 @@ $secondary-font: 'Luckiest Guy', cursive;
 	}
 
     &.btn-a11y {
+        margin: 0px 0px 0px 50px;
+        float:left; 
+        display:block;
         background:none;        
         border:none;
         position:relative;
@@ -144,6 +156,10 @@ $secondary-font: 'Luckiest Guy', cursive;
 	}
 
     &.btn-gh {
+        float:left;
+        display:block;
+        
+        margin: 0px 0px 0px 50px;
         border: 0;
         position:relative;
         width: 100px;
@@ -166,14 +182,16 @@ $secondary-font: 'Luckiest Guy', cursive;
             right:50px;   
         }
 		.no-touch &:hover {
-            background:#e57c7c;
+            background:red;
 		}
 	}
-
 	@include MQ(S) {
 	}
 }
-
+.cd-buttons {
+    clear:both;
+}
 .cd-buttons .cd-box:nth-of-type(2) span {
 	/* CSS class name color */ 
+
 }
