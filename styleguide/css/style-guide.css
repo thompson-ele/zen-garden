@@ -92,6 +92,9 @@
   font-size: 1.4rem;
   font-family: "Luckiest Guy", cursive; }
   .btn.btn-html {
+    margin: 0px 0px 0px 50px;
+    float: left;
+    display: block;
     padding: 0;
     width: 0;
     height: 0;
@@ -116,6 +119,9 @@
     .no-touch .btn.btn-html:hover {
       border-bottom: 35px solid #eeb6d4; }
   .btn.btn-css {
+    margin: 0px 0px 0px 50px;
+    float: left;
+    display: block;
     width: 40px;
     height: 40px;
     background: #446cb4;
@@ -131,6 +137,9 @@
     .no-touch .btn.btn-css:hover {
       background: #708fc9; }
   .btn.btn-cc {
+    margin: 0px 0px 0px 50px;
+    float: left;
+    display: block;
     background: none;
     border-top: none;
     position: relative;
@@ -154,6 +163,9 @@
     .no-touch .btn.btn-cc:hover {
       border-bottom: 35px solid #ffe167; }
   .btn.btn-a11y {
+    margin: 0px 0px 0px 50px;
+    float: left;
+    display: block;
     background: none;
     border: none;
     position: relative;
@@ -200,6 +212,9 @@
     .no-touch .btn.btn-a11y:hover {
       border-bottom: 35px solid #8cce7a; }
   .btn.btn-gh {
+    float: left;
+    display: block;
+    margin: 0px 0px 0px 50px;
     border: 0;
     position: relative;
     width: 100px;
@@ -221,7 +236,10 @@
       bottom: 10px;
       right: 50px; }
     .no-touch .btn.btn-gh:hover {
-      background: #e57c7c; }
+      background: red; }
+
+.cd-buttons {
+  clear: both; }
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */ }
