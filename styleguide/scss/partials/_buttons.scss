@@ -1,0 +1,179 @@
+
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Luckiest Guy', cursive;
+
+.btn {
+	font: {
+		size: 1.4rem;
+		family: $secondary-font;
+	}
+
+	&:focus {
+	}
+
+	.no-touch &:hover {
+	}
+
+	&.btn-html {      
+        padding:0;
+        width: 0;
+	    height: 0;
+	    border-left: 50px solid transparent;
+	    border-right: 15px solid transparent;
+	    border-bottom: 35px solid $main-1;
+        background:none;
+        border-top:none;
+        position:relative;
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        .btn-html-txt {
+            position:absolute;
+            top:10px;
+            right:10px;
+            -webkit-transform: rotate(10deg);
+            -moz-transform: rotate(10deg);
+            -ms-transform: rotate(10deg);
+            -o-transform: rotate(10deg);
+        }
+		.no-touch &:hover {
+            border-bottom: 35px solid #eeb6d4;
+		}
+	}
+
+	&.btn-css {
+        width: 40px;
+	    height: 40px;
+	    background: $main-2;
+	    -moz-border-radius: 50px;
+	    -webkit-border-radius: 50px;
+	    border-radius: 50px;
+        border:none;
+        position:relative;
+        .btn-css-txt {
+            position:absolute;
+            top:5px;
+            left:25px;            
+        }
+		.no-touch &:hover {
+            background:#708fc9;
+		}
+	}
+
+	&.btn-cc {
+        background:none;
+        border-top:none;
+        position:relative;
+        border-bottom: 35px solid $main-3;
+	    border-left: 15px solid transparent;
+	    border-right: 15px solid transparent;
+	    height: 0;
+	    width: 80px;
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+        .btn-cc-txt {
+            -webkit-transform: rotate(-5deg);
+            -moz-transform: rotate(-5deg);
+            -ms-transform: rotate(-5deg);
+            -o-transform: rotate(-5deg);
+            position:absolute;
+            top:20px;
+            left:40px;            
+        }
+		.no-touch &:hover {
+            border-bottom: 35px solid #ffe167;  
+		}
+	}
+
+    &.btn-a11y {
+        background:none;        
+        border:none;
+        position:relative;
+        width: 40px;
+	    height: 25px;
+	    background: $main-4;
+	    position: relative;
+        -webkit-transform: rotate(130deg);
+        -moz-transform: rotate(130deg);
+        -ms-transform: rotate(130deg);
+        -o-transform: rotate(130deg);
+        &:before{
+            content: "";
+	        position: absolute;
+	        top: -10px;
+	        left: 0;
+	        width: 0;
+	        height: 0;
+	        border-left: 20px solid transparent;
+	        border-right: 20px solid transparent;
+	        border-bottom: 10px solid $main-4;
+        }
+        &:before.no-touch &:hover {
+            border-bottom: 10px solid #8cce7a;
+		}
+        &:after{
+            content: "";
+	        position: absolute;
+	        bottom: -10px;
+	        left: 0;
+	        width: 0;
+	        height: 0;
+	        border-left: 20px solid transparent;
+	        border-right: 20px solid transparent;
+	        border-top: 10px solid $main-4;
+            
+        }
+        &:after.no-touch &:hover {
+            border-bottom: 10px solid #8cce7a;
+		}
+        .btn-a11y-txt{
+            position:absolute;
+            -webkit-transform: rotate(-130deg);
+            -moz-transform: rotate(-130deg);
+            -ms-transform: rotate(-130deg);
+            -o-transform: rotate(-130deg);
+            bottom:20px;
+            right:10px;   
+        }
+		.no-touch &:hover {
+            border-bottom: 35px solid #8cce7a;
+		}
+	}
+
+    &.btn-gh {
+        border: 0;
+        position:relative;
+        width: 100px;
+	    height: 45px;
+	    background: $extra-5;
+	    -moz-border-radius: 100px / 50px;
+	    -webkit-border-radius: 100px / 50px;
+	    border-radius: 100px / 50px;
+        -webkit-transform: rotate(15deg);
+        -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -o-transform: rotate(15deg);
+        .btn-gh-txt{
+            position:absolute;
+            -webkit-transform: rotate(-15deg);
+            -moz-transform: rotate(-15deg);
+            -ms-transform: rotate(-15deg);
+            -o-transform: rotate(-15deg);
+            bottom:10px;
+            right:50px;   
+        }
+		.no-touch &:hover {
+            background:#e57c7c;
+		}
+	}
+
+	@include MQ(S) {
+	}
+}
+
+.cd-buttons .cd-box:nth-of-type(2) span {
+	/* CSS class name color */ 
+}
