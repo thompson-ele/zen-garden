@@ -531,17 +531,3 @@ section {
 .no-csstransitions .cd-select::after {
 	display: none;
 }
-
-/*** Wireframes ***/
-#wireframes figure {
-    display: inline-block;
-    width: 100%;
-    margin-left: 25px;
-    vertical-align: top;
-    margin-bottom: 25px;
-}
-
-.wire-right, .cd-box > figure {
-    display: inline-block;
-    width: 46%!important;
-}
