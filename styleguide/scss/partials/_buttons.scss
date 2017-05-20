@@ -124,7 +124,7 @@ $secondary-font: 'Luckiest Guy', cursive;
 	        border-bottom: 10px solid $main-4;
         }
         &:before.no-touch &:hover {
-            border-bottom: 10px solid #8cce7a;
+            background: #8cce7a;
 		}
         &:after{
             content: "";
@@ -139,7 +139,7 @@ $secondary-font: 'Luckiest Guy', cursive;
             
         }
         &:after.no-touch &:hover {
-            border-bottom: 10px solid #8cce7a;
+            background: #8cce7a;
 		}
         .btn-a11y-txt{
             position:absolute;
@@ -151,7 +151,7 @@ $secondary-font: 'Luckiest Guy', cursive;
             right:10px;   
         }
 		.no-touch &:hover {
-            border-bottom: 35px solid #8cce7a;
+            background: #8cce7a;
 		}
 	}
 
@@ -182,7 +182,7 @@ $secondary-font: 'Luckiest Guy', cursive;
             right:50px;   
         }
 		.no-touch &:hover {
-            background:red;
+            background:#e57c7c;
 		}
 	}
 	@include MQ(S) {
