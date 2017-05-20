@@ -414,124 +414,6 @@ section {
 	}
 }
 
-/* xColor section - basic style */
-
-.cd-colors {
-
-	li {
-		text-align: center;
-		@include column(.48);
-		margin: 0 4% 1em 0;
-
-		&:nth-of-type(2n) {
-			margin-right: 0;
-		}
-	}
-
-	.cd-color-swatch {
-		position: relative;
-		width: 100%;
-		padding: 50% 0;
-
-		&::before, &::after {
-			/* lighter and darker color shades of the same swatch */
-			content: '';
-			position: absolute;
-			bottom: 0;
-			width: 50%;
-			height: 20%;
-		}
-
-		&::before {
-			left: 0;
-		}
-
-		&::after {
-			right: 0;
-		}
-	}
-
-	b {
-		display: block;
-		padding: .6em 0;
-	}
-
-	li:nth-of-type(1) .cd-color-swatch {
-		background: $main-1;
-
-		&::before {
-			background: lighten($main-1, 5%);
-		}
-
-		&::after {
-			background: darken($main-1, 5%);
-		}
-	}
-
-	li:nth-of-type(2) .cd-color-swatch {
-		background: $main-2;
-
-		&::before {
-			background: lighten($main-2, 5%);
-		}
-
-		&::after {
-			background: darken($main-2, 5%);
-		}
-	}
-
-	li:nth-of-type(3) .cd-color-swatch {
-		background: $main-3;
-
-		&::before {
-			background: lighten($main-3, 5%);
-		}
-
-		&::after {
-			background: darken($main-3, 5%);
-		}
-	}
-
-	li:nth-of-type(4) .cd-color-swatch {
-		background: $main-4;
-
-		&::before {
-			background: lighten($main-4, 5%);
-		}
-
-		&::after {
-			background: darken($main-4, 5%);
-		}
-	}
-
-	li:nth-of-type(5) .cd-color-swatch {
-		background: $extra-5;
-
-		&::before {
-			background: lighten($extra-5, 5%);
-		}
-
-		&::after {
-			background: darken($extra-5, 5%);
-		}
-	}
-
-	@include MQ(S) {
-		li {
-			@include column(.19);
-			margin: 0 1.25% 1em 0;
-
-			&:nth-of-type(2n) {
-				margin-right: 1.25%;
-			}
-
-			&:nth-of-type(5n) {
-				margin-right: 0;
-			}
-		}
-	}
-}
-
 .cd-typography .cd-box,
 .cd-buttons .cd-box,
 .cd-icons .cd-box,
@@ -650,10 +532,16 @@ section {
 	display: none;
 }
 
-/* Wireframes */
+/*** Wireframes ***/
 #wireframes figure {
     display: inline-block;
-    width: 46%;
+    width: 100%;
     margin-left: 25px;
     vertical-align: top;
+    margin-bottom: 25px;
+}
+
+.wire-right, .cd-box > figure {
+    display: inline-block;
+    width: 46%!important;
 }

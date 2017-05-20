@@ -1,7 +1,8 @@
-$main-1: #e284b6;
-$main-2: #446cb4;
-$main-3: #ffd528;
-$main-4: #65bc4c;
+// Our colors
+$main-1: #e284b6; //pink
+$main-2: #446cb4; //blue
+$main-3: #ffd528; //yellow
+$main-4: #65bc4c; //green
 
 $extra-1: #63cdf4;
 $extra-2: #9072b3;
@@ -16,6 +17,24 @@ $extra-10: #85a1d3;
 $extra-11: #f9f5cf;
 $extra-12: #fef2dc;
 
-$headerFont: 'Luckiest Guy', cursive;
+// fonts
+
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Luckiest Guy', cursive;
 
 
+
+
+
+// Original Colors (not ours)
+
+$color-1: #5f8ee4; // Cornflower Blue - Action color
+$color-2: #19191a; // Dark Blueol
+$color-3: #e4655f; // Red
+$color-4: #e6e6e6; // light grey
+$color-5: #ffffff; // white
+
+// additional colors
+
+$success: #6fce72; // green
+$alert: $color-3;  // red
