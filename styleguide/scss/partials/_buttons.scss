@@ -122,10 +122,10 @@ $secondary-font: 'Luckiest Guy', cursive;
 	        border-left: 20px solid transparent;
 	        border-right: 20px solid transparent;
 	        border-bottom: 10px solid $main-4;
-        }
-        &:before.no-touch &:hover {
+            .no-touch &:hover {
             background: #8cce7a;
-		}
+		    }
+        }
         &:after{
             content: "";
 	        position: absolute;
@@ -136,10 +136,10 @@ $secondary-font: 'Luckiest Guy', cursive;
 	        border-left: 20px solid transparent;
 	        border-right: 20px solid transparent;
 	        border-top: 10px solid $main-4;
-            
-        }
-        &:after.no-touch &:hover {
+
+            .no-touch &:hover {
             background: #8cce7a;
+            }
 		}
         .btn-a11y-txt{
             position:absolute;
