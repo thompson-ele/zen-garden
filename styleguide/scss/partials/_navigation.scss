@@ -1,2 +1,17 @@
+.cd-primary-nav li a, .cd-secondary-nav li a, .other-links li a{
+    color: $main-2;
+    &:visited{
+        color:$main-4;
+    }
+    &:hover{
+        color: $main-1;
+    }
+    &:active{
+        color: $extra-5
+    }
+    
+}
 
-
+.cd-secondary-nav {
+    background-color: $main-3;
+}

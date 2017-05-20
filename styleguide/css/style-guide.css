@@ -64,6 +64,18 @@
     .cd-colors li:nth-of-type(5n) {
       margin-right: 0; } }
 
+.cd-primary-nav li a, .cd-secondary-nav li a, .other-links li a {
+  color: #446cb4; }
+  .cd-primary-nav li a:visited, .cd-secondary-nav li a:visited, .other-links li a:visited {
+    color: #65bc4c; }
+  .cd-primary-nav li a:hover, .cd-secondary-nav li a:hover, .other-links li a:hover {
+    color: #e284b6; }
+  .cd-primary-nav li a:active, .cd-secondary-nav li a:active, .other-links li a:active {
+    color: #db4646; }
+
+.cd-secondary-nav {
+  background-color: #ffd528; }
+
 /* -------------------------------- 
 
 xBackground 
