@@ -189,7 +189,9 @@ $secondary-font: 'Luckiest Guy', cursive;
 	}
 }
 .cd-buttons {
-    clear:both;
+    .cd-box:first-of-type {
+		height: 70px;
+	}
 }
 .cd-buttons .cd-box:nth-of-type(2) span {
 	/* CSS class name color */ 
