@@ -1,2 +1,250 @@
 /* CSS Document */
 
+//Images
+$logo: "styleguide/assets/kittens/kitten-head.svg";
+$image1: "styleguide/assets/kittens/kitten-barbell.svg";
+$image2: "styleguide/assets/kittens/kitten-leotard.svg";
+$image3: "styleguide/assets/kittens/kitten-yoga.svg";
+
+$imageW: 200px;
+$imageH: 220px;
+$imageW2: 210px;
+$imageH2: 195px;
+$logoW: 80px;
+$logoH: 80px;
+$logoW2: 80px;
+$logoH2: 82px;
+
+// Font
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+$primary-font: 'Open Sans', sans-serif;
+$header-font: 'Luckiest Guy', cursive;
+
+// Our colors
+$main-1: #e284b6; //pink
+$sidebar: #446cb4; //blue
+$headerFooter: #ffd528; //yellow
+$main-4: #65bc4c; //green
+
+$extra-1: #63cdf4;
+$extra-2: #9072b3;
+$extra-3: #ec2026;
+$extra-4: #fbaa31;
+$extra-5: #db4646; //red
+$extra-6: #66c3a2;
+$extra-7: #a0d3a2;
+$extra-8: #cae9e6;
+$extra-9: #925223;
+$extra-10: #85a1d3;
+$extra-11: #f9f5cf;
+$extra-12: #fef2dc;
+
+body {
+    margin: 0;
+    font-family: $primary-font;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4{
+    font-family: $header-font;
+}
+
+.page-wrapper {
+    text-align: center;
+    position: relative;
+    overflow:hidden;
+}
+
+.main > div{
+    border-top: 1px solid black;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+header h2 {
+    margin-top: -25px;
+}
+
+@mixin images($url, $width, $height, $width2, $height2){
+    background-image: url($url);
+    background-size: $width $height;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: $width2;
+    height: $height2;
+    content: "";
+}
+
+header, .summary{
+    padding-top: 5px;
+    background-color: $headerFooter;
+    margin-right: -21px;
+    margin-left: -21px;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.summary {
+    margin-top: -20px;
+    padding-bottom: 1px;
+}
+
+header h1:before, header h1:after {
+    @include images($logo, $logoW, $logoH, $logoW2, $logoH2);
+    vertical-align: middle;
+}
+
+#zen-preamble h3:before {
+    @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+}
+
+#zen-explanation h3:after {
+    @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
+}
+
+#zen-participation h3:before {
+    @include images($image3, $imageW, $imageH, $imageW2, $imageH2);
+}
+
+#zen-benefits h3:after {
+   @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+}
+
+#zen-requirements h3:before {
+    @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
+}
+
+.sidebar{
+    background-color: $sidebar;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+a{
+    color: $sidebar;
+        &:visited{
+            color:$main-4;
+        }
+        &:hover{
+            color: $main-1;
+        }
+        &:active{
+            color: $extra-5
+        }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.wrapper div {
+    width: 25%;
+    background: white;
+    padding: 10px 15px;
+    align-self: center;
+}
+
+.wrapper div:first-child {
+    transform: rotate(-10deg);
+    padding: 0px 35px;
+    align-self: flex-start;
+}
+
+.wrapper div:last-child {
+    transform: rotate(10deg);
+    padding: 10px 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top:10px;
+    background-color: $headerFooter;
+    margin-right: -21px;
+    margin-left: -21px;
+}
+
+/* Large Screen */
+@media (min-width:880px){
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-top: none;
+        width: 27%;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 100vh;
+    }
+    
+    .wrapper div {
+        width: 73%;
+        background: white;
+        padding: 0px;
+    }
+    
+    #design-archives {
+        transform: rotate(15deg);
+    }
+    
+    .wrapper div:first-child {
+        transform: rotate(-15deg);
+        padding: 0px 20px;
+        z-index:2;
+    }
+
+    .wrapper div:last-child {
+        transform: rotate(-15deg);
+        padding: 0px;
+    }
+    
+    .intro{
+        margin-top: -35px;
+    }
+    
+    .main div {
+        display: inline-block;
+        width:98%
+    }
+    
+    .intro, .main {
+        float: right;
+        width: 70%;
+        padding-right: 19px;
+    }
+    
+    .preamble{
+        width: 98%;
+    }
+    
+    .preamble h3:before, .main div h3:before{
+        float: left;
+    }
+    
+    .main div h3:after{
+        float:right;
+    }
+    
+    footer {
+        position: relative;
+        padding-bottom: 10px;
+    }
+}
