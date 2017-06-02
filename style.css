@@ -13,8 +13,13 @@ h1, h2, h3, h4 {
   position: relative;
   overflow: hidden; }
 
+.intro {
+  margin-top: -35px;
+  padding: 0px 20px; }
+
 .main > div {
-  border-top: 1px solid black; }
+  border-top: 1px solid black;
+  padding: 0px 20px; }
 
 h1 {
   font-size: 3em;
@@ -45,7 +50,7 @@ header h1:before, header h1:after {
   content: "";
   vertical-align: middle; }
 
-#zen-preamble h3:before {
+.preamble:before {
   background-image: url("styleguide/assets/kittens/kitten-barbell.svg");
   background-size: 200px 220px;
   background-repeat: no-repeat;
@@ -54,7 +59,7 @@ header h1:before, header h1:after {
   height: 195px;
   content: ""; }
 
-#zen-explanation h3:after {
+.explanation:after {
   background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
   background-size: 200px 220px;
   background-repeat: no-repeat;
@@ -63,7 +68,7 @@ header h1:before, header h1:after {
   height: 195px;
   content: ""; }
 
-#zen-participation h3:before {
+.participation:before {
   background-image: url("styleguide/assets/kittens/kitten-yoga.svg");
   background-size: 200px 220px;
   background-repeat: no-repeat;
@@ -72,7 +77,7 @@ header h1:before, header h1:after {
   height: 195px;
   content: ""; }
 
-#zen-benefits h3:after {
+.benefits:after {
   background-image: url("styleguide/assets/kittens/kitten-barbell.svg");
   background-size: 200px 220px;
   background-repeat: no-repeat;
@@ -81,7 +86,7 @@ header h1:before, header h1:after {
   height: 195px;
   content: ""; }
 
-#zen-requirements h3:before {
+.requirements:before {
   background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
   background-size: 200px 220px;
   background-repeat: no-repeat;
@@ -90,9 +95,13 @@ header h1:before, header h1:after {
   height: 195px;
   content: ""; }
 
+.preamble h3:before, .main div h3:before, .main div h3:after {
+  background-image: none; }
+
 .sidebar {
   background-color: #446cb4;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  overflow: hidden; }
 
 .sidebar ul {
   padding-left: 0; }
@@ -112,7 +121,7 @@ a {
 .wrapper {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 10px; }
+  padding-bottom: 20px; }
 
 .wrapper div {
   width: 25%;
@@ -135,6 +144,7 @@ footer {
   left: 0;
   right: 0;
   padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #ffd528;
   margin-right: -21px;
   margin-left: -21px; }
@@ -171,12 +181,9 @@ footer {
     transform: rotate(-15deg);
     padding: 0px; }
 
-  .intro {
-    margin-top: -35px; }
-
   .main div {
     display: inline-block;
-    width: 98%; }
+    width: 97%; }
 
   .intro, .main {
     float: right;
@@ -192,8 +199,57 @@ footer {
   .main div h3:after {
     float: right; }
 
+  .preamble:before, .main div:before, .main div:after {
+    background-image: none;
+    width: 0px;
+    height: 0px; }
+
+  #zen-preamble h3:before {
+    background-image: url("styleguide/assets/kittens/kitten-barbell.svg");
+    background-size: 200px 220px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 210px;
+    height: 195px;
+    content: ""; }
+
+  #zen-explanation h3:after {
+    background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
+    background-size: 200px 220px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 210px;
+    height: 195px;
+    content: ""; }
+
+  #zen-participation h3:before {
+    background-image: url("styleguide/assets/kittens/kitten-yoga.svg");
+    background-size: 200px 220px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 210px;
+    height: 195px;
+    content: ""; }
+
+  #zen-benefits h3:after {
+    background-image: url("styleguide/assets/kittens/kitten-barbell.svg");
+    background-size: 200px 220px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 210px;
+    height: 195px;
+    content: ""; }
+
+  #zen-requirements h3:before {
+    background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
+    background-size: 200px 220px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 210px;
+    height: 195px;
+    content: ""; }
+
   footer {
-    position: relative;
-    padding-bottom: 10px; } }
+    position: relative; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -55,8 +55,14 @@ h1, h2, h3, h4{
     overflow:hidden;
 }
 
+.intro{
+    margin-top: -35px;
+    padding: 0px 20px;
+}
+
 .main > div{
     border-top: 1px solid black;
+    padding: 0px 20px;
 }
 
 h1 {
@@ -97,29 +103,34 @@ header h1:before, header h1:after {
     vertical-align: middle;
 }
 
-#zen-preamble h3:before {
+.preamble:before {
     @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
 }
 
-#zen-explanation h3:after {
+.explanation:after {
     @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
 }
 
-#zen-participation h3:before {
+.participation:before {
     @include images($image3, $imageW, $imageH, $imageW2, $imageH2);
 }
 
-#zen-benefits h3:after {
+.benefits:after {
    @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
 }
 
-#zen-requirements h3:before {
+.requirements:before {
     @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
 }
+
+.preamble h3:before, .main div h3:before, .main div h3:after{
+        background-image: none;
+    }
 
 .sidebar{
     background-color: $sidebar;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .sidebar ul {
@@ -146,7 +157,7 @@ a{
 .wrapper {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .wrapper div {
@@ -173,6 +184,7 @@ footer {
     left: 0;
     right: 0;
     padding-top:10px;
+    padding-bottom: 10px;
     background-color: $headerFooter;
     margin-right: -21px;
     margin-left: -21px;
@@ -216,13 +228,9 @@ footer {
         padding: 0px;
     }
     
-    .intro{
-        margin-top: -35px;
-    }
-    
     .main div {
         display: inline-block;
-        width:98%
+        width:97%
     }
     
     .intro, .main {
@@ -243,8 +251,34 @@ footer {
         float:right;
     }
     
+    .preamble:before, .main div:before, .main div:after{
+        background-image: none;
+        width: 0px;
+        height: 0px;
+    }
+    
+    #zen-preamble h3:before {
+        @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+    }
+
+    #zen-explanation h3:after {
+        @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
+    }
+
+    #zen-participation h3:before {
+        @include images($image3, $imageW, $imageH, $imageW2, $imageH2);
+    }
+
+    #zen-benefits h3:after {
+       @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+    }
+
+    #zen-requirements h3:before {
+        @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
+    }
+
     footer {
         position: relative;
-        padding-bottom: 10px;
     }
+    
 }
