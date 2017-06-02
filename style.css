@@ -159,7 +159,8 @@ footer {
     display: inline-block;
     width: 210px;
     height: 195px;
-    content: ""; }
+    content: "";
+    margin-top: -27px; }
 
   #zen-explanation h3:after {
     background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
@@ -186,7 +187,8 @@ footer {
     display: inline-block;
     width: 210px;
     height: 195px;
-    content: ""; }
+    content: "";
+    margin-top: -27px; }
 
   #zen-requirements h3:before {
     background-image: url("styleguide/assets/kittens/kitten-leotard.svg");

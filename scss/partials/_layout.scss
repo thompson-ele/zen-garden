@@ -117,6 +117,7 @@ footer {
 	/* Kitten SVG's */
     #zen-preamble h3:before {
         @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+        margin-top: -27px;
     }
 
     #zen-explanation h3:after {
@@ -129,6 +130,7 @@ footer {
 
     #zen-benefits h3:after {
        @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+        margin-top: -27px;
     }
 
     #zen-requirements h3:before {
