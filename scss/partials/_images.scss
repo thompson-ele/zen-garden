@@ -1,2 +1,33 @@
-/* CSS Document */
+/* ==========================================================================
+Image Styles
+========================================================================== */
 
+header h1:before, header h1:after {
+    @include images($logo, $logoW, $logoH, $logoW2, $logoH2);
+    vertical-align: middle;
+}
+
+/* Section 1: Barbell Kitten */
+.preamble:before {
+    @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+}
+
+/* Section 2: Aerobics Kitten */
+.explanation:after {
+    @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
+}
+
+/* Section 3: Yoga Kitten */
+.participation:before {
+    @include images($image3, $imageW, $imageH, $imageW2, $imageH2);
+}
+
+/* Section 4: ??? Kitten */
+.benefits:after {
+   @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+}
+
+/* Section 5: ??? Kitten */
+.requirements:before {
+    @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
+}

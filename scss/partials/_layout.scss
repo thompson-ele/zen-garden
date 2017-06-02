@@ -1,2 +1,138 @@
-/* CSS Document */
+/* ==========================================================================
+Layout Styles
+========================================================================== */
+.page-wrapper {
+    text-align: center;
+    position: relative;
+    overflow:hidden;
+}
 
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+	
+	@media (min-width:880px) {
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 100vh;
+	}
+	
+	div {
+		width: 25%;
+		background: white;
+		padding: 10px 15px;
+		align-self: center;
+		
+		&:first-child {
+			transform: rotate(-10deg);
+			padding: 0px 35px;
+			align-self: flex-start;
+		}
+		
+		&:last-child {
+			transform: rotate(10deg);
+    		padding: 10px 15px;
+		}
+		
+		@media (min-width:880px){
+			width: 73%;
+			background: white;
+			padding: 0px;
+			
+			&:first-child {
+				transform: rotate(-15deg);
+				padding: 0px 20px;
+				z-index:2;
+			}
+			
+			&:last-child {
+				transform: rotate(-15deg);
+        		padding: 0px;
+			}
+		}
+	}
+} 
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: $headerFooter;
+    margin-right: -21px;
+    margin-left: -21px;
+	
+	@media (min-width:880px) {
+		position: relative;
+	}
+}
+
+@media (min-width:880px){
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-top: none;
+        width: 27%;
+    }
+
+    .design-archives {
+        transform: rotate(15deg);
+    }
+    
+    .main { 
+		div {
+        	display: inline-block;
+        	width:97%;
+			
+			h3:after {
+				float: right;
+			}
+		}
+    }
+    
+    .intro, .main {
+        float: right;
+        width: 71%;
+        padding: 0px 12px;
+    }
+    
+    .preamble{
+        width: 98%;
+    }
+    
+    .preamble h3:before, .main div h3:before{
+        float: left;
+    }
+    
+    .preamble:before, .main div:before, .main div:after{
+        background-image: none;
+        width: 0px;
+        height: 0px;
+    }
+    
+	/* Kitten SVG's */
+    #zen-preamble h3:before {
+        @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+    }
+
+    #zen-explanation h3:after {
+        @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
+    }
+
+    #zen-participation h3:before {
+        @include images($image3, $imageW, $imageH, $imageW2, $imageH2);
+    }
+
+    #zen-benefits h3:after {
+       @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+    }
+
+    #zen-requirements h3:before {
+        @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
+    }
+    
+}

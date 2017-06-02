@@ -1,45 +1,7 @@
-/* CSS Document */
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
-body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px; }
-
-h1, h2, h3, h4 {
-  font-family: "Luckiest Guy", cursive; }
-
-.page-wrapper {
-  text-align: center;
-  position: relative;
-  overflow: hidden; }
-
-.intro {
-  margin-top: -35px;
-  padding: 0px 20px; }
-
-.main > div {
-  border-top: 1px solid black;
-  padding: 0px 20px; }
-
-h1 {
-  font-size: 3em;
-  margin-bottom: 0px; }
-
-header h2 {
-  margin-top: -25px; }
-
-header, .summary {
-  padding-top: 5px;
-  background-color: #ffd528;
-  margin-right: -21px;
-  margin-left: -21px;
-  padding-left: 21px;
-  padding-right: 21px; }
-
-.summary {
-  margin-top: -20px;
-  padding-bottom: 1px; }
-
+/* ==========================================================================
+Image Styles
+========================================================================== */
 header h1:before, header h1:after {
   background-image: url("styleguide/assets/kittens/kitten-head.svg");
   background-size: 80px 80px;
@@ -50,6 +12,7 @@ header h1:before, header h1:after {
   content: "";
   vertical-align: middle; }
 
+/* Section 1: Barbell Kitten */
 .preamble:before {
   background-image: url("styleguide/assets/kittens/kitten-barbell.svg");
   background-size: 200px 220px;
@@ -59,6 +22,7 @@ header h1:before, header h1:after {
   height: 195px;
   content: ""; }
 
+/* Section 2: Aerobics Kitten */
 .explanation:after {
   background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
   background-size: 200px 220px;
@@ -68,6 +32,7 @@ header h1:before, header h1:after {
   height: 195px;
   content: ""; }
 
+/* Section 3: Yoga Kitten */
 .participation:before {
   background-image: url("styleguide/assets/kittens/kitten-yoga.svg");
   background-size: 200px 220px;
@@ -77,6 +42,7 @@ header h1:before, header h1:after {
   height: 195px;
   content: ""; }
 
+/* Section 4: ??? Kitten */
 .benefits:after {
   background-image: url("styleguide/assets/kittens/kitten-barbell.svg");
   background-size: 200px 220px;
@@ -86,6 +52,7 @@ header h1:before, header h1:after {
   height: 195px;
   content: ""; }
 
+/* Section 5: ??? Kitten */
 .requirements:before {
   background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
   background-size: 200px 220px;
@@ -95,48 +62,47 @@ header h1:before, header h1:after {
   height: 195px;
   content: ""; }
 
-.preamble h3:before, .main div h3:before, .main div h3:after {
-  background-image: none; }
-
-.sidebar {
-  background-color: #446cb4;
-  margin-bottom: 10px;
+/* ==========================================================================
+Layout Styles
+========================================================================== */
+.page-wrapper {
+  text-align: center;
+  position: relative;
   overflow: hidden; }
-
-.sidebar ul {
-  padding-left: 0; }
-
-.sidebar ul li {
-  list-style: none; }
-
-a {
-  color: #446cb4; }
-  a:visited {
-    color: #65bc4c; }
-  a:hover {
-    color: #e284b6; }
-  a:active {
-    color: #db4646; }
 
 .wrapper {
   display: flex;
   justify-content: space-around;
   padding-bottom: 20px; }
-
-.wrapper div {
-  width: 25%;
-  background: white;
-  padding: 10px 15px;
-  align-self: center; }
-
-.wrapper div:first-child {
-  transform: rotate(-10deg);
-  padding: 0px 35px;
-  align-self: flex-start; }
-
-.wrapper div:last-child {
-  transform: rotate(10deg);
-  padding: 10px 15px; }
+  @media (min-width: 880px) {
+    .wrapper {
+      flex-wrap: wrap;
+      align-content: space-around;
+      height: 100vh; } }
+  .wrapper div {
+    width: 25%;
+    background: white;
+    padding: 10px 15px;
+    align-self: center; }
+    .wrapper div:first-child {
+      transform: rotate(-10deg);
+      padding: 0px 35px;
+      align-self: flex-start; }
+    .wrapper div:last-child {
+      transform: rotate(10deg);
+      padding: 10px 15px; }
+    @media (min-width: 880px) {
+      .wrapper div {
+        width: 73%;
+        background: white;
+        padding: 0px; }
+        .wrapper div:first-child {
+          transform: rotate(-15deg);
+          padding: 0px 20px;
+          z-index: 2; }
+        .wrapper div:last-child {
+          transform: rotate(-15deg);
+          padding: 0px; } }
 
 footer {
   position: absolute;
@@ -148,8 +114,10 @@ footer {
   background-color: #ffd528;
   margin-right: -21px;
   margin-left: -21px; }
+  @media (min-width: 880px) {
+    footer {
+      position: relative; } }
 
-/* Large Screen */
 @media (min-width: 880px) {
   .sidebar {
     position: fixed;
@@ -158,32 +126,14 @@ footer {
     border-top: none;
     width: 27%; }
 
-  .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    height: 100vh; }
-
-  .wrapper div {
-    width: 73%;
-    background: white;
-    padding: 0px; }
-
-  #design-archives {
+  .design-archives {
     transform: rotate(15deg); }
-
-  .wrapper div:first-child {
-    transform: rotate(-15deg);
-    padding: 0px 20px;
-    z-index: 2; }
-
-  .wrapper div:last-child {
-    transform: rotate(-15deg);
-    padding: 0px; }
 
   .main div {
     display: inline-block;
     width: 97%; }
+    .main div h3:after {
+      float: right; }
 
   .intro, .main {
     float: right;
@@ -196,14 +146,12 @@ footer {
   .preamble h3:before, .main div h3:before {
     float: left; }
 
-  .main div h3:after {
-    float: right; }
-
   .preamble:before, .main div:before, .main div:after {
     background-image: none;
     width: 0px;
     height: 0px; }
 
+  /* Kitten SVG's */
   #zen-preamble h3:before {
     background-image: url("styleguide/assets/kittens/kitten-barbell.svg");
     background-size: 200px 220px;
@@ -247,9 +195,61 @@ footer {
     display: inline-block;
     width: 210px;
     height: 195px;
-    content: ""; }
+    content: ""; } }
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px; }
 
-  footer {
-    position: relative; } }
+h1, h2, h3, h4 {
+  font-family: "Luckiest Guy", cursive; }
+
+.intro {
+  margin-top: -35px;
+  padding: 0px 20px; }
+
+.main > div {
+  border-top: 1px solid black;
+  padding: 0px 20px; }
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0px; }
+
+header h2 {
+  margin-top: -25px; }
+
+header, .summary {
+  padding-top: 5px;
+  background-color: #ffd528;
+  margin-right: -21px;
+  margin-left: -21px;
+  padding-left: 21px;
+  padding-right: 21px; }
+
+.summary {
+  margin-top: -20px;
+  padding-bottom: 1px; }
+
+.preamble h3:before, .main div h3:before, .main div h3:after {
+  background-image: none; }
+
+.sidebar {
+  background-color: #446cb4;
+  margin-bottom: 10px;
+  overflow: hidden; }
+  .sidebar ul {
+    padding-left: 0; }
+    .sidebar ul li {
+      list-style: none; }
+
+a {
+  color: #446cb4; }
+  a:visited {
+    color: #65bc4c; }
+  a:hover {
+    color: #e284b6; }
+  a:active {
+    color: #db4646; }
 
 /*# sourceMappingURL=style.css.map */

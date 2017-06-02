@@ -1,9 +1,7 @@
-/* CSS Document */
 @import "partials/variables";
-@import "partials/layout";
+@import "partials/mixins";
 @import "partials/images";
-
-
+@import "partials/layout";
 
 body {
     margin: 0;
@@ -13,12 +11,6 @@ body {
 
 h1, h2, h3, h4{
     font-family: $header-font;
-}
-
-.page-wrapper {
-    text-align: center;
-    position: relative;
-    overflow:hidden;
 }
 
 .intro{
@@ -40,16 +32,6 @@ header h2 {
     margin-top: -25px;
 }
 
-@mixin images($url, $width, $height, $width2, $height2){
-    background-image: url($url);
-    background-size: $width $height;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: $width2;
-    height: $height2;
-    content: "";
-}
-
 header, .summary{
     padding-top: 5px;
     background-color: $headerFooter;
@@ -64,187 +46,39 @@ header, .summary{
     padding-bottom: 1px;
 }
 
-header h1:before, header h1:after {
-    @include images($logo, $logoW, $logoH, $logoW2, $logoH2);
-    vertical-align: middle;
-}
-
-.preamble:before {
-    @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
-}
-
-.explanation:after {
-    @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
-}
-
-.participation:before {
-    @include images($image3, $imageW, $imageH, $imageW2, $imageH2);
-}
-
-.benefits:after {
-   @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
-}
-
-.requirements:before {
-    @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
-}
-
 .preamble h3:before, .main div h3:before, .main div h3:after{
-        background-image: none;
-    }
+	background-image: none;
+}
 
 .sidebar{
     background-color: $sidebar;
     margin-bottom: 10px;
     overflow: hidden;
+	
+	ul {
+		padding-left: 0;
+		
+		li {
+			list-style: none;
+		}
+	}
 }
 
-.sidebar ul {
-    padding-left: 0;
-}
-
-.sidebar ul li {
-    list-style: none;
-}
-
-a{
+a {
     color: $sidebar;
-        &:visited{
-            color:$main-4;
-        }
-        &:hover{
-            color: $main-1;
-        }
-        &:active{
-            color: $extra-5
-        }
+	
+	&:visited{
+		color:$main-4;
+	}
+	
+	&:hover{
+		color: $main-1;
+	}
+	
+	&:active{
+		color: $extra-5
+	}
 }
 
-.wrapper {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 20px;
-}
 
-.wrapper div {
-    width: 25%;
-    background: white;
-    padding: 10px 15px;
-    align-self: center;
-}
 
-.wrapper div:first-child {
-    transform: rotate(-10deg);
-    padding: 0px 35px;
-    align-self: flex-start;
-}
-
-.wrapper div:last-child {
-    transform: rotate(10deg);
-    padding: 10px 15px;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-top:10px;
-    padding-bottom: 10px;
-    background-color: $headerFooter;
-    margin-right: -21px;
-    margin-left: -21px;
-}
-
-/* Large Screen */
-@media (min-width:880px){
-    .sidebar{
-        position: fixed;
-        top: 0;
-        left: 0;
-        border-top: none;
-        width: 27%;
-    }
-    
-    .wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
-        height: 100vh;
-    }
-    
-    .wrapper div {
-        width: 73%;
-        background: white;
-        padding: 0px;
-    }
-    
-    #design-archives {
-        transform: rotate(15deg);
-    }
-    
-    .wrapper div:first-child {
-        transform: rotate(-15deg);
-        padding: 0px 20px;
-        z-index:2;
-    }
-
-    .wrapper div:last-child {
-        transform: rotate(-15deg);
-        padding: 0px;
-    }
-    
-    .main div {
-        display: inline-block;
-        width:97%
-    }
-    
-    .intro, .main {
-        float: right;
-        width: 71%;
-        padding: 0px 12px;
-    }
-    
-    .preamble{
-        width: 98%;
-    }
-    
-    .preamble h3:before, .main div h3:before{
-        float: left;
-    }
-    
-    .main div h3:after{
-        float:right;
-    }
-    
-    .preamble:before, .main div:before, .main div:after{
-        background-image: none;
-        width: 0px;
-        height: 0px;
-    }
-    
-    #zen-preamble h3:before {
-        @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
-    }
-
-    #zen-explanation h3:after {
-        @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
-    }
-
-    #zen-participation h3:before {
-        @include images($image3, $imageW, $imageH, $imageW2, $imageH2);
-    }
-
-    #zen-benefits h3:after {
-       @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
-    }
-
-    #zen-requirements h3:before {
-        @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
-    }
-
-    footer {
-        position: relative;
-    }
-    
-}
