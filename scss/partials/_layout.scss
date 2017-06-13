@@ -12,6 +12,10 @@ Layout Styles
     justify-content: space-around;
     padding-bottom: 20px;
 	
+        @media (max-width:480px){
+            flex-wrap: wrap;
+        }
+        
 	@media (min-width:880px) {
         flex-wrap: wrap;
         align-content: space-around;
@@ -34,6 +38,20 @@ Layout Styles
 			transform: rotate(10deg);
     		padding: 10px 15px;
 		}
+                
+                @media (max-width:480px){
+                        width: 50%;
+                        transform: rotate(20deg);
+                        margin-bottom: 30px;
+                        
+                        &:first-child {
+                            transform: rotate(-20deg);
+			}
+			
+			&:last-child {
+                            transform: rotate(-20deg);
+			}
+                }
 		
 		@media (min-width:880px){
 			width: 73%;

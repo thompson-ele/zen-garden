@@ -5,6 +5,14 @@ Image Styles
 header h1:before, header h1:after {
     @include images($logo, $logoW, $logoH, $logoW2, $logoH2);
     vertical-align: middle;
+    
+    @media(max-width:600px){
+        @include images($logo, 55px, 55px, 55px, 52px);
+    }
+    
+    @media (max-width: 880px){
+        @include images($logo, 40px, 40px, 40px, 48px);
+    }
 }
 
 /* Section 1: Barbell Kitten */
