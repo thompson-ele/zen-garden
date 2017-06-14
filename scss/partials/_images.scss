@@ -10,7 +10,7 @@ header h1:before, header h1:after {
         @include images($logo, 55px, 55px, 55px, 52px);
     }
     
-    @media (max-width: 880px){
+    @media (max-width: 480px){
         @include images($logo, 40px, 40px, 40px, 48px);
     }
 }
@@ -18,24 +18,39 @@ header h1:before, header h1:after {
 /* Section 1: Barbell Kitten */
 .preamble:before {
     @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+    @media(max-width:600px){
+        @include images($image1, 150px, 170px, 160px, 146px);
+    }
 }
 
 /* Section 2: Aerobics Kitten */
 .explanation:after {
     @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
+    @media(max-width:600px){
+        @include images($image2, 145px, 133px, 145px, 145px);
+    }
 }
 
 /* Section 3: Yoga Kitten */
 .participation:before {
     @include images($image3, $imageW, $imageH, $imageW2, $imageH2);
+    @media(max-width:600px){
+        @include images($image3, 190px, 150px, 190px, 135px);
+    }
 }
 
 /* Section 4: ??? Kitten */
 .benefits:after {
    @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+   @media(max-width:600px){
+        @include images($image1, 150px, 132px, 160px, 150px);
+    }
 }
 
 /* Section 5: ??? Kitten */
 .requirements:before {
     @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
+    @media(max-width:600px){
+        @include images($image2, 145px, 165px, 145px, 145px);
+    }
 }

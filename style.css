@@ -20,7 +20,7 @@ header h1:before, header h1:after {
       width: 55px;
       height: 52px;
       content: ""; } }
-  @media (max-width: 880px) {
+  @media (max-width: 480px) {
     header h1:before, header h1:after {
       background-image: url("styleguide/assets/kittens/kitten-head.svg");
       background-size: 40px 40px;
@@ -39,6 +39,15 @@ header h1:before, header h1:after {
   width: 210px;
   height: 195px;
   content: ""; }
+  @media (max-width: 600px) {
+    .preamble:before {
+      background-image: url("styleguide/assets/kittens/kitten-barbell.svg");
+      background-size: 150px 170px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 160px;
+      height: 146px;
+      content: ""; } }
 
 /* Section 2: Aerobics Kitten */
 .explanation:after {
@@ -49,6 +58,15 @@ header h1:before, header h1:after {
   width: 210px;
   height: 195px;
   content: ""; }
+  @media (max-width: 600px) {
+    .explanation:after {
+      background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
+      background-size: 145px 133px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 145px;
+      height: 145px;
+      content: ""; } }
 
 /* Section 3: Yoga Kitten */
 .participation:before {
@@ -59,6 +77,15 @@ header h1:before, header h1:after {
   width: 210px;
   height: 195px;
   content: ""; }
+  @media (max-width: 600px) {
+    .participation:before {
+      background-image: url("styleguide/assets/kittens/kitten-yoga.svg");
+      background-size: 190px 150px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 190px;
+      height: 135px;
+      content: ""; } }
 
 /* Section 4: ??? Kitten */
 .benefits:after {
@@ -69,6 +96,15 @@ header h1:before, header h1:after {
   width: 210px;
   height: 195px;
   content: ""; }
+  @media (max-width: 600px) {
+    .benefits:after {
+      background-image: url("styleguide/assets/kittens/kitten-barbell.svg");
+      background-size: 150px 132px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 160px;
+      height: 150px;
+      content: ""; } }
 
 /* Section 5: ??? Kitten */
 .requirements:before {
@@ -79,6 +115,15 @@ header h1:before, header h1:after {
   width: 210px;
   height: 195px;
   content: ""; }
+  @media (max-width: 600px) {
+    .requirements:before {
+      background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
+      background-size: 145px 165px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 145px;
+      height: 145px;
+      content: ""; } }
 
 /* ==========================================================================
 Layout Styles
