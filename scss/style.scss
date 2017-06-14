@@ -90,5 +90,19 @@ a {
 	}
 }
 
+footer a {
+    color: black;
+	&:visited{
+		color:black;
+	}
+	
+	&:hover{
+		color: black;
+	}
+	
+	&:active{
+		color:black;
+	}
+}
 
 
