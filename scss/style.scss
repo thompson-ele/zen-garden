@@ -61,7 +61,7 @@ header, .summary{
 }
 
 .sidebar{
-    background-color: $sidebar;
+    background: url($sidebar-image);
     margin-bottom: 10px;
     overflow: hidden;
 	

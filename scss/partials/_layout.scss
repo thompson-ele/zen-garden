@@ -105,6 +105,10 @@ a.zen-validate-html, a.zen-validate-css, a.zen-license, a.zen-accessibility, a.z
 a.zen-accessibility{
     bottom: 3px;
     right: 17px;
+    
+    @media (max-width: 480px){
+        right: 13px;
+    }
 }
 
 a.zen-validate-html {
@@ -177,6 +181,10 @@ a.zen-github {
     z-index: -1;
     border: none;
     position: absolute;
+    
+    @media (max-width: 480px){
+        right: -5px;
+    }
 }
 
 .zen-license:before{
@@ -198,6 +206,11 @@ a.zen-github {
     -ms-transform: rotate(5deg);
     -o-transform: rotate(5deg);
     transform: rotate(5deg);
+    
+    @media (max-width: 480px){
+        right: -10px;
+        width: 30px;
+    }
 }
 
 .zen-accessibility:before{
@@ -235,6 +248,11 @@ a.zen-github {
     -moz-transform: rotate(15deg);
     -ms-transform: rotate(15deg);
     -o-transform: rotate(15deg);
+    
+    @media (max-width: 480px){
+        width: 70px;
+        right: -34px;
+    }
 }
 
 @media (min-width:880px){

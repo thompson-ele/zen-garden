@@ -209,6 +209,9 @@ a.zen-validate-html, a.zen-validate-css, a.zen-license, a.zen-accessibility, a.z
 a.zen-accessibility {
   bottom: 3px;
   right: 17px; }
+  @media (max-width: 480px) {
+    a.zen-accessibility {
+      right: 13px; } }
 
 a.zen-validate-html {
   margin-left: -30px; }
@@ -270,6 +273,9 @@ a.zen-github {
   z-index: -1;
   border: none;
   position: absolute; }
+  @media (max-width: 480px) {
+    .zen-validate-css:before {
+      right: -5px; } }
 
 .zen-license:before {
   content: "";
@@ -290,6 +296,10 @@ a.zen-github {
   -ms-transform: rotate(5deg);
   -o-transform: rotate(5deg);
   transform: rotate(5deg); }
+  @media (max-width: 480px) {
+    .zen-license:before {
+      right: -10px;
+      width: 30px; } }
 
 .zen-accessibility:before {
   content: "";
@@ -325,6 +335,10 @@ a.zen-github {
   -moz-transform: rotate(15deg);
   -ms-transform: rotate(15deg);
   -o-transform: rotate(15deg); }
+  @media (max-width: 480px) {
+    .zen-github:before {
+      width: 70px;
+      right: -34px; } }
 
 @media (min-width: 880px) {
   .sidebar {
@@ -453,7 +467,7 @@ header, .summary {
   background-image: none; }
 
 .sidebar {
-  background-color: #446cb4;
+  background: url("styleguide/assets/Pattern.svg");
   margin-bottom: 10px;
   overflow: hidden; }
   .sidebar ul {
