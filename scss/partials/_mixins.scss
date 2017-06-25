@@ -1,4 +1,4 @@
-@mixin images($url, $width, $height, $width2, $height2){
+/*@mixin images($url, $width, $height, $width2, $height2){
     background-image: url($url);
     background-size: $width $height;
     background-repeat: no-repeat;
@@ -6,4 +6,37 @@
     width: $width2;
     height: $height2;
     content: "";
+}*/
+
+// DEFINES IMG URL, PATTERN BACKGROUND URL, AND WIDTH AND HEIGHT OF IMAGE
+@mixin images($kittenURL, $patternURL, $width, $height){
+    background-image: url($patternURL);
+    background-size: $width $height;
+    background-repeat: repeat;
+    display: inline-block;
+    width: $width;
+    height: $height;
+    content: url(#{$kittenURL});
 }
+
+// ADDS PREFIXES TO CSS
+@mixin prefix($property, $value) { 
+    @each $prefix in $prefixes {
+        #{$prefix}#{$property}: #{$value};
+    }
+}
+
+// DEFINES BREAKPOINTS FOR SMALL/MEDIUM/LARGE SIZES
+@mixin breakpoint($break) {
+	@if $break == large {
+		@media (max-width: $break-lg) { @content; }
+	}
+	@else if $break == medium {
+		@media (max-width: $break-md) { @content; }
+	}
+	@else if $break == small {
+		@media (max-width: $break-sm) { @content; }
+	} @else {
+		@media ($break) { @content; }
+	}
+}   

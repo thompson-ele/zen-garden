@@ -1,25 +1,37 @@
 //Images
 $logo: "styleguide/assets/kittens/kitten-head.svg";
+
+// KITTENS
 $image1: "styleguide/assets/kittens/kitten-barbell.svg";
 $image2: "styleguide/assets/kittens/kitten-leotard.svg";
 $image3: "styleguide/assets/kittens/kitten-yoga.svg";
+$image4: "img/kitten-kettlebell.svg";
 $sidebar-image: "styleguide/assets/Pattern.svg";
 
-$imageW: 200px;
-$imageH: 220px;
-$imageW2: 210px;
-$imageH2: 195px;
-$logoW: 80px;
-$logoH: 80px;
-$logoW2: 80px;
-$logoH2: 82px;
+// PATTERNS
+$pattern1: "img/pattern1.svg";
+$pattern2: "img/pattern2.svg";
 
-// Font
+// IMAGE HEIGHTS AND WIDTHS
+$image-width: 		300px;
+$image-height: 		300px;
+$image-width-lg: 	325px;
+$image-height-lg: 	325px;
+$image-width-sm: 	175px;
+$image-height-sm: 	175px;
+//$imageW2: 		210px;
+//$imageH2: 		195px;
+$logoW: 			80px;
+$logoH: 			80px;
+$logoW2: 			80px;
+$logoH2: 			82px;
+
+// FONT
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 $primary-font: 'Open Sans', sans-serif;
 $header-font: 'Luckiest Guy', cursive;
 
-// Our colors
+// COLORS
 $main-1: #e284b6; //pink
 $sidebar: #446cb4; //blue
 $headerFooter: #ffd528; //yellow
@@ -37,3 +49,11 @@ $extra-9: #925223;
 $extra-10: #85a1d3;
 $extra-11: #f9f5cf;
 $extra-12: #fef2dc;
+
+// PREFIXES
+$prefixes: ("-webkit-","-moz-", "-o-", "-ms-", "");
+
+// MEDIA QUERY BREAKPOINTS
+$break-sm: 480px;
+$break-md: 600px;
+$break-lg: 880px;

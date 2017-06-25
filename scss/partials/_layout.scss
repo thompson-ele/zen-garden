@@ -12,9 +12,9 @@ Layout Styles
     justify-content: space-around;
     padding-bottom: 70px;
 	
-        @media (max-width:480px){
-            flex-wrap: wrap;
-        }
+	@media (max-width:480px){
+		flex-wrap: wrap;
+	}
         
 	@media (min-width:880px) {
         flex-wrap: wrap;
@@ -22,6 +22,7 @@ Layout Styles
         height: 100vh;
 	}
 	
+	/*----- SIDEBAR -----*/
 	div {
 		width: 25%;
 		background: white;
@@ -29,29 +30,29 @@ Layout Styles
 		align-self: center;
 		
 		&:first-child {
-			transform: rotate(-10deg);
+			@include prefix(transform, "rotate(-10deg)");
 			padding: 0px 35px;
 			align-self: flex-start;
 		}
 		
 		&:last-child {
-			transform: rotate(10deg);
+			@include prefix(transform, "rotate(10deg)");
     		padding: 10px 15px;
 		}
                 
-                @media (max-width:480px){
-                        width: 50%;
-                        transform: rotate(20deg);
-                        margin-bottom: 30px;
-                        
-                        &:first-child {
-                            transform: rotate(-20deg);
+		@media (max-width:480px){
+			width: 50%;
+			@include prefix(transform, "rotate(20deg)");
+			margin-bottom: 30px;
+			
+			&:first-child {
+				@include prefix(transform, "rotate(-20deg)");
 			}
 			
 			&:last-child {
-                            transform: rotate(-20deg);
+				@include prefix(transform, "rotate(-20deg)");
 			}
-                }
+		}
 		
 		@media (min-width:880px){
 			width: 73%;
@@ -160,11 +161,7 @@ a.zen-github {
     border-top: none;
     position: absolute;
     z-index: -1;
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-    -ms-transform: rotate(-10deg);
-    -o-transform: rotate(-10deg);
-    transform: rotate(-10deg);
+	@include prefix(transform, "rotate(-10deg)");
 }
 
 .zen-validate-css:before{
@@ -175,9 +172,7 @@ a.zen-github {
     width: 40px;
     height: 40px;
     background: #446cb4;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
+	@include prefix(border-radius, "50px");
     z-index: -1;
     border: none;
     position: absolute;
@@ -201,11 +196,7 @@ a.zen-github {
     height: 0;
     width: 45px;
     z-index: -1;
-    -webkit-transform: rotate(5deg);
-    -moz-transform: rotate(5deg);
-    -ms-transform: rotate(5deg);
-    -o-transform: rotate(5deg);
-    transform: rotate(5deg);
+	@include prefix(transform, "rotate(5deg)");
     
     @media (max-width: 480px){
         right: -10px;
@@ -224,10 +215,7 @@ a.zen-github {
     background: #63cdf4;
     z-index: -1;
     position: absolute;
-    -webkit-transform: rotate(114deg);
-    -moz-transform: rotate(114deg);
-    -ms-transform: rotate(114deg);
-    -o-transform: rotate(114deg);
+	@include prefix(transform, "rotate(114deg)");
 }
 
 .zen-github:before{
@@ -244,10 +232,7 @@ a.zen-github {
     -moz-border-radius: 100px / 50px;
     -webkit-border-radius: 100px / 50px;
     border-radius: 100px / 50px;
-    -webkit-transform: rotate(15deg);
-    -moz-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
-    -o-transform: rotate(15deg);
+	@include prefix(transform, "rotate(15deg)");
     
     @media (max-width: 480px){
         width: 70px;
@@ -297,29 +282,6 @@ a.zen-github {
         background-image: none;
         width: 0px;
         height: 0px;
-    }
-    
-	/* Kitten SVG's */
-    #zen-preamble h3:before {
-        @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
-        margin-top: -27px;
-    }
-
-    #zen-explanation h3:after {
-        @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
-    }
-
-    #zen-participation h3:before {
-        @include images($image3, $imageW, $imageH, $imageW2, $imageH2);
-    }
-
-    #zen-benefits h3:after {
-       @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
-        margin-top: -27px;
-    }
-
-    #zen-requirements h3:before {
-        @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
     }
     
 }

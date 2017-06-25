@@ -2,6 +2,7 @@
 Image Styles
 ========================================================================== */
 
+/* TODO: ADD IN PATTERN/MAKE HEADING LOOK FANCIER
 header h1:before, header h1:after {
     @include images($logo, $logoW, $logoH, $logoW2, $logoH2);
     vertical-align: middle;
@@ -13,44 +14,68 @@ header h1:before, header h1:after {
     @media (max-width: 480px){
         @include images($logo, 40px, 40px, 40px, 48px);
     }
+}*/
+
+@media (min-width:880px){
+	#zen-preamble h3:before {
+        @include images($image1, $pattern1, $image-width-lg, $image-height-lg);
+        margin-top: -27px;
+    }
+
+    #zen-explanation h3:after {
+        @include images($image2, $pattern2, $image-width-lg, $image-height-lg);
+    }
+
+    #zen-participation h3:before {
+        @include images($image3, $pattern1, $image-width-lg, $image-height-lg);
+    }
+
+    #zen-benefits h3:after {
+       @include images($image4, $pattern2, $image-width-lg, $image-height-lg);
+        margin-top: -27px;
+    }
+
+    #zen-requirements h3:before {
+        @include images($image2, $pattern1, $image-width-lg, $image-height-lg);
+    }
 }
 
 /* Section 1: Barbell Kitten */
 .preamble:before {
-    @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+    @include images($image1, $pattern1, $image-width, $image-height);
     @media(max-width:600px){
-        @include images($image1, 150px, 170px, 160px, 146px);
+        @include images($image1, $pattern1, $image-width-sm, $image-height-sm);
     }
 }
 
 /* Section 2: Aerobics Kitten */
 .explanation:after {
-    @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
+    @include images($image2, $pattern2, $image-width, $image-height);
     @media(max-width:600px){
-        @include images($image2, 145px, 133px, 145px, 145px);
+        @include images($image2, $pattern2, $image-width-sm, $image-height-sm);
     }
 }
 
 /* Section 3: Yoga Kitten */
 .participation:before {
-    @include images($image3, $imageW, $imageH, $imageW2, $imageH2);
+    @include images($image3, $pattern1, $image-width, $image-height);
     @media(max-width:600px){
-        @include images($image3, 190px, 150px, 190px, 135px);
+        @include images($image3, $pattern1, $image-width-sm, $image-height-sm);
     }
 }
 
-/* Section 4: ??? Kitten */
+/* Section 4: Kettlebell Kitten */
 .benefits:after {
-   @include images($image1, $imageW, $imageH, $imageW2, $imageH2);
+   @include images($image4, $pattern2, $image-width, $image-height);
    @media(max-width:600px){
-        @include images($image1, 150px, 132px, 160px, 150px);
+        @include images($image4, $pattern2, $image-width-sm, $image-height-sm);
     }
 }
 
 /* Section 5: ??? Kitten */
 .requirements:before {
-    @include images($image2, $imageW, $imageH, $imageW2, $imageH2);
+    @include images($image2, $pattern1, $image-width, $image-height);
     @media(max-width:600px){
-        @include images($image2, 145px, 165px, 145px, 145px);
+        @include images($image2, $pattern1, $image-width-sm, $image-height-sm);
     }
 }
