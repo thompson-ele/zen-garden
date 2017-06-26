@@ -9,14 +9,41 @@
 }*/
 
 // DEFINES IMG URL, PATTERN BACKGROUND URL, AND WIDTH AND HEIGHT OF IMAGE
-@mixin images($kittenURL, $patternURL, $width, $height){
+@mixin patterns($patternURL, $width, $height, $patternWidth, $pattern-margin){
     background-image: url($patternURL);
     background-size: $width $height;
     background-repeat: repeat;
     display: inline-block;
+    width: $patternWidth;
+    margin-left: $pattern-margin;
+    height: $height;
+    padding: 0 0;
+    content: "";
+}
+
+@mixin images ($kittenURL, $width, $height, $position){
+    background-image: url($kittenURL);
+    background-size: $width $height;
     width: $width;
     height: $height;
-    content: url(#{$kittenURL});
+    position: absolute;
+    @if $position == "left" {
+        left: 0;
+        top: 0;
+    }
+    @else if $position == "right" {
+        right: 0;
+        top: 0;
+    }
+    @else if $position == "top" {
+        top: 0;
+        left: calc(50% - (#{$width}/2));
+    }
+    @else if $position == "bottom" {
+        top: 0;
+        right: calc(50% - (#{$width}/2));
+    }
+    content: "";
 }
 
 // ADDS PREFIXES TO CSS

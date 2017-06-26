@@ -17,65 +17,144 @@ header h1:before, header h1:after {
 }*/
 
 @media (min-width:880px){
-	#zen-preamble h3:before {
-        @include images($image1, $pattern1, $image-width-lg, $image-height-lg);
-        margin-top: -27px;
+    #zen-preamble h3 {
+        &:before {
+            @include patterns($pattern1, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
+            margin-top:-35px;
+            margin-right:20px;
+        }
+        &:after{
+            @include images($image1, $image-width-lg, $image-height-lg, left);
+        }
     }
 
-    #zen-explanation h3:after {
-        @include images($image2, $pattern2, $image-width-lg, $image-height-lg);
+    #zen-explanation h3 {
+        &:after{
+            @include patterns($pattern2, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
+            margin-top:-35px;
+            margin-left:20px;
+        }
+        &:before{
+            @include images($image2, $image-width-lg, $image-height-lg, right);
+        }
     }
 
-    #zen-participation h3:before {
-        @include images($image3, $pattern1, $image-width-lg, $image-height-lg);
+    #zen-participation h3 {
+        &:before{
+            @include patterns($pattern1, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
+            margin-top:-35px;
+            margin-right:20px;
+        }
+        &:after {
+            @include images($image3, $image-width-lg, $image-height-lg, left);
+        }
     }
 
-    #zen-benefits h3:after {
-       @include images($image4, $pattern2, $image-width-lg, $image-height-lg);
-        margin-top: -27px;
+    #zen-benefits h3 {
+       &:after {
+            @include patterns($pattern2, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
+            margin-top:-35px;
+            margin-left:20px;
+       }
+       &:before {
+           @include images($image4, $image-width-lg, $image-height-lg, right);
+       }
+       
     }
 
-    #zen-requirements h3:before {
-        @include images($image2, $pattern1, $image-width-lg, $image-height-lg);
+    #zen-requirements h3 {
+        &:before {
+            @include patterns($pattern1, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
+            margin-top:-35px;
+            margin-right:20px;
+        }
+        &:after{
+            @include images($image2, $image-width-lg, $image-height-lg, left);
+        }
     }
 }
 
 /* Section 1: Barbell Kitten */
-.preamble:before {
-    @include images($image1, $pattern1, $image-width, $image-height);
-    @media(max-width:600px){
-        @include images($image1, $pattern1, $image-width-sm, $image-height-sm);
+.preamble {
+    position:relative;
+    &:before {
+        @include patterns($pattern1, $image-width, $image-height, $pattern-width, $pattern-margin);
+        @media(max-width:600px){
+            @include patterns($pattern1, $image-width-sm, $image-height-sm, $pattern-width, $pattern-margin);
+        }
+    }
+    &:after{
+        @include images($image1, $image-width, $image-height, top);
+        @media(max-width:600px){
+            @include images($image1, $image-width-sm, $image-height-sm, top);
+        }
     }
 }
 
 /* Section 2: Aerobics Kitten */
-.explanation:after {
-    @include images($image2, $pattern2, $image-width, $image-height);
-    @media(max-width:600px){
-        @include images($image2, $pattern2, $image-width-sm, $image-height-sm);
+.explanation{
+    position:relative;
+    &:before {
+        @include patterns($pattern2, $image-width, $image-height, $pattern-width, $pattern-margin);
+        @media(max-width:600px){
+            @include patterns($pattern2, $image-width-sm, $image-height-sm, $pattern-width, $pattern-margin);
+        }
+    }
+    &:after{
+        @include images($image2, $image-width, $image-height, top);
+        @media(max-width:600px){
+            @include images($image2, $image-width-sm, $image-height-sm, top);
+        }
     }
 }
 
 /* Section 3: Yoga Kitten */
-.participation:before {
-    @include images($image3, $pattern1, $image-width, $image-height);
-    @media(max-width:600px){
-        @include images($image3, $pattern1, $image-width-sm, $image-height-sm);
+.participation {
+    position:relative;
+    &:before {
+        @include patterns($pattern1, $image-width, $image-height, $pattern-width, $pattern-margin);
+        @media(max-width:600px){
+            @include patterns($pattern1, $image-width-sm, $image-height-sm, $pattern-width, $pattern-margin);
+        }
+    }
+    &:after{
+        @include images($image3, $image-width, $image-height, top);
+        @media(max-width:600px){
+            @include images($image3, $image-width-sm, $image-height-sm, top);
+        }
     }
 }
 
 /* Section 4: Kettlebell Kitten */
-.benefits:after {
-   @include images($image4, $pattern2, $image-width, $image-height);
-   @media(max-width:600px){
-        @include images($image4, $pattern2, $image-width-sm, $image-height-sm);
+.benefits {
+    position:relative;
+    &:before {
+        @include patterns($pattern2, $image-width, $image-height, $pattern-width, $pattern-margin);
+        @media(max-width:600px){
+            @include patterns($pattern2, $image-width-sm, $image-height-sm, $pattern-width, $pattern-margin);
+        }
+    }
+    &:after{
+        @include images($image4, $image-width, $image-height, top);
+        @media(max-width:600px){
+            @include images($image4, $image-width-sm, $image-height-sm, top);
+        }
     }
 }
 
 /* Section 5: ??? Kitten */
-.requirements:before {
-    @include images($image2, $pattern1, $image-width, $image-height);
-    @media(max-width:600px){
-        @include images($image2, $pattern1, $image-width-sm, $image-height-sm);
+.requirements {
+    position:relative;
+    &:before {
+        @include patterns($pattern1, $image-width, $image-height, $pattern-width, $pattern-margin);
+        @media(max-width:600px){
+            @include patterns($pattern1, $image-width-sm, $image-height-sm, $pattern-width, $pattern-margin);
+        }
     }
-}
+    &:after{
+        @include images($image2, $image-width, $image-height, top);
+        @media(max-width:600px){
+            @include images($image2, $image-width-sm, $image-height-sm, top);
+        }
+    }
+} 

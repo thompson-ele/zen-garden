@@ -256,8 +256,7 @@ a.zen-github {
     .main { 
 		div {
         	display: inline-block;
-        	width:97%;
-			
+        	width:100%;
 			h3:after {
 				float: right;
 			}
@@ -266,22 +265,25 @@ a.zen-github {
     
     .intro, .main {
         float: right;
-        width: 71%;
-        padding: 0px 12px;
+        width: 73%;
     }
     
     .preamble{
-        width: 98%;
+        width: 100%;
     }
     
     .preamble h3:before, .main div h3:before{
         float: left;
     }
     
-    .preamble:before, .main div:before, .main div:after{
+    .preamble:before, .preamble:after, .main div:before, .main div:after{
         background-image: none;
         width: 0px;
         height: 0px;
+    }
+    
+    .main > div > p, .intro > div > p {
+        padding: 0px 20px;
     }
     
 }
