@@ -639,6 +639,9 @@ a.zen-github {
       width: 70px;
       right: -34px; } }
 
+.main > div > p, .intro > div > p {
+  padding: 0px 20px; }
+
 @media (min-width: 880px) {
   .sidebar {
     position: fixed;
@@ -669,10 +672,7 @@ a.zen-github {
   .preamble:before, .preamble:after, .main div:before, .main div:after {
     background-image: none;
     width: 0px;
-    height: 0px; }
-
-  .main > div > p, .intro > div > p {
-    padding: 0px 20px; } }
+    height: 0px; } }
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;

@@ -271,6 +271,10 @@ a.zen-github {
     }
 }
 
+.main > div > p, .intro > div > p {
+    padding: 0px 20px;
+}
+
 @media (min-width:880px){
     .sidebar{
         position: fixed;
@@ -311,10 +315,6 @@ a.zen-github {
         background-image: none;
         width: 0px;
         height: 0px;
-    }
-    
-    .main > div > p, .intro > div > p {
-        padding: 0px 20px;
     }
     
 }
