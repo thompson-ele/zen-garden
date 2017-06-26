@@ -28,29 +28,49 @@ Layout Styles
 		background: white;
 		padding: 10px 15px;
 		align-self: center;
-		
+		transition: transform .2s linear;
 		&:first-child {
 			@include prefix(transform, "rotate(-10deg)");
 			padding: 0px 35px;
 			align-self: flex-start;
+                        transition: transform .2s linear;
+                        &:hover{
+                            @include prefix(transform, "rotate(0deg)");
+                        }
 		}
 		
 		&:last-child {
 			@include prefix(transform, "rotate(10deg)");
-    		padding: 10px 15px;
+                        padding: 10px 15px;
+                        transition: transform .2s linear;
+                        &:hover{
+                            @include prefix(transform, "rotate(0deg)");
+                        }
 		}
                 
 		@media (max-width:480px){
 			width: 50%;
 			@include prefix(transform, "rotate(20deg)");
 			margin-bottom: 30px;
+                        transition: transform .2s linear;
+                        &:hover{
+                            @include prefix(transform, "rotate(0deg)");
+                        }
 			
 			&:first-child {
 				@include prefix(transform, "rotate(-20deg)");
+                                transition: transform .2s linear;
+                                &:hover{
+                                    @include prefix(transform, "rotate(0deg)");
+                                }
 			}
 			
 			&:last-child {
 				@include prefix(transform, "rotate(-20deg)");
+                                transition: transform .2s linear;
+                                &:hover{
+                                    @include prefix(transform, "rotate(0deg)");
+                                }
 			}
 		}
 		
@@ -58,16 +78,27 @@ Layout Styles
 			width: 73%;
 			background: white;
 			padding: 0px;
-			
+                        transition: transform .2s linear;
+                        &:hover{
+                            transform: rotate(0deg);
+                        }
 			&:first-child {
 				transform: rotate(-15deg);
 				padding: 0px 20px;
 				z-index:2;
+                                transition: transform .2s linear;
+                                &:hover{
+                                    transform: rotate(0deg);
+                                }
 			}
 			
 			&:last-child {
-				transform: rotate(-15deg);
-        		padding: 0px;
+                            transform: rotate(-15deg);
+                            padding: 0px;
+                            transition: transform .2s linear;
+                            &:hover{
+                                transform: rotate(0deg);
+                            }
 			}
 		}
 	}

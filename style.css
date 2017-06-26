@@ -379,7 +379,8 @@ Layout Styles
     width: 25%;
     background: white;
     padding: 10px 15px;
-    align-self: center; }
+    align-self: center;
+    transition: transform .2s linear; }
     .wrapper div:first-child {
       -webkit-transform: rotate(-10deg);
       -moz-transform: rotate(-10deg);
@@ -387,14 +388,28 @@ Layout Styles
       -ms-transform: rotate(-10deg);
       transform: rotate(-10deg);
       padding: 0px 35px;
-      align-self: flex-start; }
+      align-self: flex-start;
+      transition: transform .2s linear; }
+      .wrapper div:first-child:hover {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg); }
     .wrapper div:last-child {
       -webkit-transform: rotate(10deg);
       -moz-transform: rotate(10deg);
       -o-transform: rotate(10deg);
       -ms-transform: rotate(10deg);
       transform: rotate(10deg);
-      padding: 10px 15px; }
+      padding: 10px 15px;
+      transition: transform .2s linear; }
+      .wrapper div:last-child:hover {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg); }
     @media (max-width: 480px) {
       .wrapper div {
         width: 50%;
@@ -403,31 +418,61 @@ Layout Styles
         -o-transform: rotate(20deg);
         -ms-transform: rotate(20deg);
         transform: rotate(20deg);
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        transition: transform .2s linear; }
+        .wrapper div:hover {
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg); }
         .wrapper div:first-child {
           -webkit-transform: rotate(-20deg);
           -moz-transform: rotate(-20deg);
           -o-transform: rotate(-20deg);
           -ms-transform: rotate(-20deg);
-          transform: rotate(-20deg); }
+          transform: rotate(-20deg);
+          transition: transform .2s linear; }
+          .wrapper div:first-child:hover {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg); }
         .wrapper div:last-child {
           -webkit-transform: rotate(-20deg);
           -moz-transform: rotate(-20deg);
           -o-transform: rotate(-20deg);
           -ms-transform: rotate(-20deg);
-          transform: rotate(-20deg); } }
+          transform: rotate(-20deg);
+          transition: transform .2s linear; }
+          .wrapper div:last-child:hover {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg); } }
     @media (min-width: 880px) {
       .wrapper div {
         width: 73%;
         background: white;
-        padding: 0px; }
+        padding: 0px;
+        transition: transform .2s linear; }
+        .wrapper div:hover {
+          transform: rotate(0deg); }
         .wrapper div:first-child {
           transform: rotate(-15deg);
           padding: 0px 20px;
-          z-index: 2; }
+          z-index: 2;
+          transition: transform .2s linear; }
+          .wrapper div:first-child:hover {
+            transform: rotate(0deg); }
         .wrapper div:last-child {
           transform: rotate(-15deg);
-          padding: 0px; } }
+          padding: 0px;
+          transition: transform .2s linear; }
+          .wrapper div:last-child:hover {
+            transform: rotate(0deg); } }
 
 footer {
   position: absolute;
