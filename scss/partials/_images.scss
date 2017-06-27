@@ -20,7 +20,7 @@ header h1:before, header h1:after {
     #zen-preamble h3 {
         &:before {
             @include patterns($pattern1, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
-            margin-top:-35px;
+            margin-top:-33px;
             margin-right:20px;
         }
         &:after{
@@ -31,7 +31,7 @@ header h1:before, header h1:after {
     #zen-explanation h3 {
         &:after{
             @include patterns($pattern2, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
-            margin-top:-35px;
+            margin-top:-33px;
             margin-left:20px;
         }
         &:before{
@@ -42,7 +42,7 @@ header h1:before, header h1:after {
     #zen-participation h3 {
         &:before{
             @include patterns($pattern1, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
-            margin-top:-35px;
+            margin-top:-33px;
             margin-right:20px;
         }
         &:after {
@@ -53,7 +53,7 @@ header h1:before, header h1:after {
     #zen-benefits h3 {
        &:after {
             @include patterns($pattern2, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
-            margin-top:-35px;
+            margin-top:-33px;
             margin-left:20px;
        }
        &:before {
@@ -65,7 +65,7 @@ header h1:before, header h1:after {
     #zen-requirements h3 {
         &:before {
             @include patterns($pattern1, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
-            margin-top:-35px;
+            margin-top:-33px;
             margin-right:20px;
         }
         &:after{
