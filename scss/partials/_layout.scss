@@ -26,6 +26,7 @@ Layout Styles
 	div {
 		width: 25%;
 		background: white;
+		border: 5px solid $sidebar;
 		padding: 10px 15px;
 		align-self: center;
 		transition: transform .2s linear;
