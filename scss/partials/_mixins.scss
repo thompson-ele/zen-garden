@@ -16,7 +16,6 @@
     display: inline-block;
     width: $patternWidth;
     margin-left: $pattern-margin;
-    height: $height;
     padding: 0 0;
     content: "";
 }
@@ -29,11 +28,11 @@
     position: absolute;
     @if $position == "left" {
         left: 0;
-        top: 0;
+        top: calc(50% - (#{$width}/2));
     }
     @else if $position == "right" {
         right: 0;
-        top: 0;
+        top: calc(50% - (#{$width}/2));
     }
     @else if $position == "top" {
         top: 0;

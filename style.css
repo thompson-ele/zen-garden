@@ -32,11 +32,12 @@ header h1:before, header h1:after {
     display: inline-block;
     width: 325px;
     margin-left: 0px;
-    height: 325px;
     padding: 0 0;
     content: "";
-    margin-top: -33px;
-    margin-right: 20px; }
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; }
   #zen-preamble h3:after {
     background-image: url("styleguide/assets/kittens/kitten-barbell.svg");
     background-size: 325px 325px;
@@ -44,7 +45,7 @@ header h1:before, header h1:after {
     height: 325px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: calc(50% - (325px/2));
     content: ""; }
 
   #zen-explanation h3:after {
@@ -54,11 +55,12 @@ header h1:before, header h1:after {
     display: inline-block;
     width: 325px;
     margin-left: 0px;
-    height: 325px;
     padding: 0 0;
     content: "";
-    margin-top: -33px;
-    margin-left: 20px; }
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0; }
   #zen-explanation h3:before {
     background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
     background-size: 325px 325px;
@@ -66,8 +68,9 @@ header h1:before, header h1:after {
     height: 325px;
     position: absolute;
     right: 0;
-    top: 0;
-    content: ""; }
+    top: calc(50% - (325px/2));
+    content: "";
+    z-index: 3; }
 
   #zen-participation h3:before {
     background-image: url("img/pattern1.svg");
@@ -76,11 +79,12 @@ header h1:before, header h1:after {
     display: inline-block;
     width: 325px;
     margin-left: 0px;
-    height: 325px;
     padding: 0 0;
     content: "";
-    margin-top: -33px;
-    margin-right: 20px; }
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; }
   #zen-participation h3:after {
     background-image: url("styleguide/assets/kittens/kitten-yoga.svg");
     background-size: 325px 325px;
@@ -88,7 +92,7 @@ header h1:before, header h1:after {
     height: 325px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: calc(50% - (325px/2));
     content: ""; }
 
   #zen-benefits h3:after {
@@ -98,11 +102,12 @@ header h1:before, header h1:after {
     display: inline-block;
     width: 325px;
     margin-left: 0px;
-    height: 325px;
     padding: 0 0;
     content: "";
-    margin-top: -33px;
-    margin-left: 20px; }
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0; }
   #zen-benefits h3:before {
     background-image: url("img/kitten-kettlebell.svg");
     background-size: 325px 325px;
@@ -110,8 +115,9 @@ header h1:before, header h1:after {
     height: 325px;
     position: absolute;
     right: 0;
-    top: 0;
-    content: ""; }
+    top: calc(50% - (325px/2));
+    content: "";
+    z-index: 3; }
 
   #zen-requirements h3:before {
     background-image: url("img/pattern1.svg");
@@ -120,11 +126,12 @@ header h1:before, header h1:after {
     display: inline-block;
     width: 325px;
     margin-left: 0px;
-    height: 325px;
     padding: 0 0;
     content: "";
-    margin-top: -33px;
-    margin-right: 20px; }
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0; }
   #zen-requirements h3:after {
     background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
     background-size: 325px 325px;
@@ -132,7 +139,7 @@ header h1:before, header h1:after {
     height: 325px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: calc(50% - (325px/2));
     content: ""; } }
 /* Section 1: Barbell Kitten */
 .preamble {
@@ -144,9 +151,9 @@ header h1:before, header h1:after {
     display: inline-block;
     width: 108%;
     margin-left: -20px;
-    height: 300px;
     padding: 0 0;
-    content: ""; }
+    content: "";
+    height: 300px; }
     @media (max-width: 600px) {
       .preamble:before {
         background-image: url("img/pattern1.svg");
@@ -155,9 +162,9 @@ header h1:before, header h1:after {
         display: inline-block;
         width: 108%;
         margin-left: -20px;
-        height: 175px;
         padding: 0 0;
-        content: ""; } }
+        content: "";
+        height: 175px; } }
   .preamble:after {
     background-image: url("styleguide/assets/kittens/kitten-barbell.svg");
     background-size: 300px 300px;
@@ -188,9 +195,9 @@ header h1:before, header h1:after {
     display: inline-block;
     width: 108%;
     margin-left: -20px;
-    height: 300px;
     padding: 0 0;
-    content: ""; }
+    content: "";
+    height: 300px; }
     @media (max-width: 600px) {
       .explanation:before {
         background-image: url("img/pattern2.svg");
@@ -199,9 +206,9 @@ header h1:before, header h1:after {
         display: inline-block;
         width: 108%;
         margin-left: -20px;
-        height: 175px;
         padding: 0 0;
-        content: ""; } }
+        content: "";
+        height: 175px; } }
   .explanation:after {
     background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
     background-size: 300px 300px;
@@ -210,7 +217,8 @@ header h1:before, header h1:after {
     position: absolute;
     top: 0;
     left: calc(50% - (300px/2));
-    content: ""; }
+    content: "";
+    height: 300px; }
     @media (max-width: 600px) {
       .explanation:after {
         background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
@@ -220,7 +228,8 @@ header h1:before, header h1:after {
         position: absolute;
         top: 0;
         left: calc(50% - (175px/2));
-        content: ""; } }
+        content: "";
+        height: 175px; } }
 
 /* Section 3: Yoga Kitten */
 .participation {
@@ -232,9 +241,9 @@ header h1:before, header h1:after {
     display: inline-block;
     width: 108%;
     margin-left: -20px;
-    height: 300px;
     padding: 0 0;
-    content: ""; }
+    content: "";
+    height: 300px; }
     @media (max-width: 600px) {
       .participation:before {
         background-image: url("img/pattern1.svg");
@@ -243,9 +252,9 @@ header h1:before, header h1:after {
         display: inline-block;
         width: 108%;
         margin-left: -20px;
-        height: 175px;
         padding: 0 0;
-        content: ""; } }
+        content: "";
+        height: 175px; } }
   .participation:after {
     background-image: url("styleguide/assets/kittens/kitten-yoga.svg");
     background-size: 300px 300px;
@@ -254,7 +263,8 @@ header h1:before, header h1:after {
     position: absolute;
     top: 0;
     left: calc(50% - (300px/2));
-    content: ""; }
+    content: "";
+    height: 300px; }
     @media (max-width: 600px) {
       .participation:after {
         background-image: url("styleguide/assets/kittens/kitten-yoga.svg");
@@ -264,7 +274,8 @@ header h1:before, header h1:after {
         position: absolute;
         top: 0;
         left: calc(50% - (175px/2));
-        content: ""; } }
+        content: "";
+        height: 175px; } }
 
 /* Section 4: Kettlebell Kitten */
 .benefits {
@@ -276,9 +287,9 @@ header h1:before, header h1:after {
     display: inline-block;
     width: 108%;
     margin-left: -20px;
-    height: 300px;
     padding: 0 0;
-    content: ""; }
+    content: "";
+    height: 300px; }
     @media (max-width: 600px) {
       .benefits:before {
         background-image: url("img/pattern2.svg");
@@ -287,9 +298,9 @@ header h1:before, header h1:after {
         display: inline-block;
         width: 108%;
         margin-left: -20px;
-        height: 175px;
         padding: 0 0;
-        content: ""; } }
+        content: "";
+        height: 175px; } }
   .benefits:after {
     background-image: url("img/kitten-kettlebell.svg");
     background-size: 300px 300px;
@@ -320,9 +331,9 @@ header h1:before, header h1:after {
     display: inline-block;
     width: 108%;
     margin-left: -20px;
-    height: 300px;
     padding: 0 0;
-    content: ""; }
+    content: "";
+    height: 300px; }
     @media (max-width: 600px) {
       .requirements:before {
         background-image: url("img/pattern1.svg");
@@ -331,9 +342,9 @@ header h1:before, header h1:after {
         display: inline-block;
         width: 108%;
         margin-left: -20px;
-        height: 175px;
         padding: 0 0;
-        content: ""; } }
+        content: "";
+        height: 175px; } }
   .requirements:after {
     background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
     background-size: 300px 300px;
@@ -655,7 +666,8 @@ a.zen-github {
 
   .main div {
     display: inline-block;
-    width: 100%; }
+    width: 100%;
+    min-height: 320px; }
     .main div h3:after {
       float: right; }
 
@@ -664,7 +676,8 @@ a.zen-github {
     width: 73%; }
 
   .preamble {
-    width: 100%; }
+    width: 100%;
+    min-height: 320px; }
 
   .preamble h3:before, .main div h3:before {
     float: left; }
@@ -672,7 +685,13 @@ a.zen-github {
   .preamble:before, .preamble:after, .main div:before, .main div:after {
     background-image: none;
     width: 0px;
-    height: 0px; } }
+    height: 0px; }
+
+  .preamble > *, .participation > *, .requirements > * {
+    margin-left: 325px; }
+
+  .explanation > *, .benefits > * {
+    margin-right: 325px; } }
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -713,6 +732,9 @@ header, .summary {
 .summary {
   margin-top: -20px;
   padding-bottom: 1px; }
+
+.preamble {
+  padding-bottom: 5px; }
 
 .preamble h3:before, .main div h3:before, .main div h3:after {
   background-image: none; }
