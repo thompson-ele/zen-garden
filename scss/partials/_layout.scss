@@ -303,7 +303,9 @@ a.zen-github {
 		div {
         	display: inline-block;
         	width:100%;
-                min-height: 320px;
+                //min-height: 320px;
+                padding-top: 5%;
+                padding-bottom: 5%;
 			h3:after {
 				float: right;
 			}
@@ -315,9 +317,11 @@ a.zen-github {
         width: 73%;
     }
     
-    .preamble{
+    #zen-preamble{
         width: 100%;
-        min-height: 320px;
+        //min-height: 320px;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
     
     .preamble h3:before, .main div h3:before{
@@ -336,5 +340,10 @@ a.zen-github {
     
     .explanation > *,  .benefits > *{
         margin-right: $pattern-width-lg;
+    }
+    
+    #zen-benefits {
+        padding-top:7%;
+        padding-bottom: 7%;
     }
 }

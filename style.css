@@ -677,7 +677,8 @@ a.zen-github {
   .main div {
     display: inline-block;
     width: 100%;
-    min-height: 320px; }
+    padding-top: 5%;
+    padding-bottom: 5%; }
     .main div h3:after {
       float: right; }
 
@@ -685,9 +686,10 @@ a.zen-github {
     float: right;
     width: 73%; }
 
-  .preamble {
+  #zen-preamble {
     width: 100%;
-    min-height: 320px; }
+    padding-top: 5%;
+    padding-bottom: 5%; }
 
   .preamble h3:before, .main div h3:before {
     float: left; }
@@ -701,7 +703,11 @@ a.zen-github {
     margin-left: 325px; }
 
   .explanation > *, .benefits > * {
-    margin-right: 325px; } }
+    margin-right: 325px; }
+
+  #zen-benefits {
+    padding-top: 7%;
+    padding-bottom: 7%; } }
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -750,7 +756,8 @@ header, .summary {
 
 .preamble h3, .main h3 {
   font-size: 2em;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  margin-top: 5px; }
 
 .sidebar {
   background: url("styleguide/assets/Pattern.svg");
