@@ -667,7 +667,8 @@ a.zen-github {
     top: 0;
     left: 0;
     border-top: none;
-    width: 27%; }
+    width: 27%;
+    background-size: 100px !important; }
 
   .design-archives {
     transform: rotate(15deg);
@@ -754,6 +755,7 @@ header, .summary {
 .sidebar {
   background: url("styleguide/assets/Pattern.svg");
   background-position: -14px -12px;
+  background-size: 65px;
   margin-bottom: 10px;
   overflow: hidden; }
   .sidebar ul {
