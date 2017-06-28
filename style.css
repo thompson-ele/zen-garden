@@ -741,6 +741,7 @@ header, .summary {
 
 .sidebar {
   background: url("styleguide/assets/Pattern.svg");
+  background-position: -14px;
   margin-bottom: 10px;
   overflow: hidden; }
   .sidebar ul {
