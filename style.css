@@ -492,9 +492,7 @@ footer {
   right: 0;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: #ffd528;
-  margin-right: -21px;
-  margin-left: -21px; }
+  background-color: #ffd528; }
   @media (min-width: 880px) {
     footer {
       position: relative; } }
@@ -741,7 +739,7 @@ header, .summary {
 
 .sidebar {
   background: url("styleguide/assets/Pattern.svg");
-  background-position: -14px;
+  background-position: -14px -12px;
   margin-bottom: 10px;
   overflow: hidden; }
   .sidebar ul {
