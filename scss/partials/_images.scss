@@ -19,7 +19,7 @@ header h1:before, header h1:after {
 @media (min-width:880px){
     #zen-preamble h3 {
         &:before {
-            @include patterns($pattern1, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
+            @include patterns($pattern1, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
             position: absolute;
             top: 0;
             bottom: 0;
@@ -32,7 +32,7 @@ header h1:before, header h1:after {
 
     #zen-explanation h3 {
         &:after{
-            @include patterns($pattern2, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
+            @include patterns($pattern2, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
             position: absolute;
             top: 0;
             bottom: 0;
@@ -46,7 +46,7 @@ header h1:before, header h1:after {
 
     #zen-participation h3 {
         &:before{
-            @include patterns($pattern1, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
+            @include patterns($pattern1, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
             position: absolute;
             top: 0;
             bottom: 0;
@@ -60,7 +60,7 @@ header h1:before, header h1:after {
 
     #zen-benefits h3 {
        &:after {
-            @include patterns($pattern2, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
+            @include patterns($pattern2, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
             position: absolute;
             top: 0;
             bottom: 0;
@@ -75,7 +75,7 @@ header h1:before, header h1:after {
 
     #zen-requirements h3 {
         &:before {
-            @include patterns($pattern1, $image-width-lg, $image-height-lg, $pattern-width-lg, $pattern-margin-lg);
+            @include patterns($pattern1, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
             position: absolute;
             top: 0;
             bottom: 0;
@@ -91,10 +91,10 @@ header h1:before, header h1:after {
 .preamble {
     position:relative;
     &:before {
-        @include patterns($pattern1, $image-width, $image-height, $pattern-width, $pattern-margin);
+        @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
         @media(max-width:600px){
-            @include patterns($pattern1, $image-width-sm, $image-height-sm, $pattern-width, $pattern-margin);
+            @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
             height: $image-height-sm;
         }
     }
@@ -110,10 +110,10 @@ header h1:before, header h1:after {
 .explanation{
     position:relative;
     &:before {
-        @include patterns($pattern2, $image-width, $image-height, $pattern-width, $pattern-margin);
+        @include patterns($pattern2, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
         @media(max-width:600px){
-            @include patterns($pattern2, $image-width-sm, $image-height-sm, $pattern-width, $pattern-margin);
+            @include patterns($pattern2, $pattern-size, $pattern-width, $pattern-margin);
             height: $image-height-sm;
         }
     }
@@ -131,10 +131,10 @@ header h1:before, header h1:after {
 .participation {
     position:relative;
     &:before {
-        @include patterns($pattern1, $image-width, $image-height, $pattern-width, $pattern-margin);
+        @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
         @media(max-width:600px){
-            @include patterns($pattern1, $image-width-sm, $image-height-sm, $pattern-width, $pattern-margin);
+            @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
             height: $image-height-sm;
         }
     }
@@ -152,10 +152,10 @@ header h1:before, header h1:after {
 .benefits {
     position:relative;
     &:before {
-        @include patterns($pattern2, $image-width, $image-height, $pattern-width, $pattern-margin);
+        @include patterns($pattern2, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
         @media(max-width:600px){
-            @include patterns($pattern2, $image-width-sm, $image-height-sm, $pattern-width, $pattern-margin);
+            @include patterns($pattern2, $pattern-size, $pattern-width, $pattern-margin);
             height: $image-height-sm;
         }
     }
@@ -171,10 +171,10 @@ header h1:before, header h1:after {
 .requirements {
     position:relative;
     &:before {
-        @include patterns($pattern1, $image-width, $image-height, $pattern-width, $pattern-margin);
+        @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
         @media(max-width:600px){
-            @include patterns($pattern1, $image-width-sm, $image-height-sm, $pattern-width, $pattern-margin);
+            @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
             height: $image-height-sm;
         }
     }
