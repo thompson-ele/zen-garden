@@ -62,6 +62,10 @@ header, .summary{
 	background-image: none;
 }
 
+.preamble h3, .main h3 {
+	font-size: 2em;
+}
+
 .sidebar{
     background: url($sidebar-image);
     background-position: -14px -12px;
