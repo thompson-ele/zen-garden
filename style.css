@@ -27,7 +27,7 @@ header h1:before, header h1:after {
 @media (min-width: 880px) {
   #zen-preamble h3:before {
     background-image: url("img/pattern1.svg");
-    background-size: 175px 175px;
+    background-size: 180px 180px;
     background-repeat: repeat;
     display: inline-block;
     width: 325px;
@@ -50,7 +50,7 @@ header h1:before, header h1:after {
 
   #zen-explanation h3:after {
     background-image: url("img/pattern2.svg");
-    background-size: 175px 175px;
+    background-size: 180px 180px;
     background-repeat: repeat;
     display: inline-block;
     width: 325px;
@@ -74,7 +74,7 @@ header h1:before, header h1:after {
 
   #zen-participation h3:before {
     background-image: url("img/pattern1.svg");
-    background-size: 175px 175px;
+    background-size: 180px 180px;
     background-repeat: repeat;
     display: inline-block;
     width: 325px;
@@ -97,7 +97,7 @@ header h1:before, header h1:after {
 
   #zen-benefits h3:after {
     background-image: url("img/pattern2.svg");
-    background-size: 175px 175px;
+    background-size: 180px 180px;
     background-repeat: repeat;
     display: inline-block;
     width: 325px;
@@ -121,7 +121,7 @@ header h1:before, header h1:after {
 
   #zen-requirements h3:before {
     background-image: url("img/pattern1.svg");
-    background-size: 175px 175px;
+    background-size: 180px 180px;
     background-repeat: repeat;
     display: inline-block;
     width: 325px;
@@ -146,7 +146,7 @@ header h1:before, header h1:after {
   position: relative; }
   .preamble:before {
     background-image: url("img/pattern1.svg");
-    background-size: 175px 175px;
+    background-size: 180px 180px;
     background-repeat: repeat;
     display: inline-block;
     width: 108%;
@@ -157,7 +157,7 @@ header h1:before, header h1:after {
     @media (max-width: 600px) {
       .preamble:before {
         background-image: url("img/pattern1.svg");
-        background-size: 175px 175px;
+        background-size: 180px 180px;
         background-repeat: repeat;
         display: inline-block;
         width: 108%;
@@ -190,7 +190,7 @@ header h1:before, header h1:after {
   position: relative; }
   .explanation:before {
     background-image: url("img/pattern2.svg");
-    background-size: 175px 175px;
+    background-size: 180px 180px;
     background-repeat: repeat;
     display: inline-block;
     width: 108%;
@@ -201,7 +201,7 @@ header h1:before, header h1:after {
     @media (max-width: 600px) {
       .explanation:before {
         background-image: url("img/pattern2.svg");
-        background-size: 175px 175px;
+        background-size: 180px 180px;
         background-repeat: repeat;
         display: inline-block;
         width: 108%;
@@ -236,7 +236,7 @@ header h1:before, header h1:after {
   position: relative; }
   .participation:before {
     background-image: url("img/pattern1.svg");
-    background-size: 175px 175px;
+    background-size: 180px 180px;
     background-repeat: repeat;
     display: inline-block;
     width: 108%;
@@ -247,7 +247,7 @@ header h1:before, header h1:after {
     @media (max-width: 600px) {
       .participation:before {
         background-image: url("img/pattern1.svg");
-        background-size: 175px 175px;
+        background-size: 180px 180px;
         background-repeat: repeat;
         display: inline-block;
         width: 108%;
@@ -282,7 +282,7 @@ header h1:before, header h1:after {
   position: relative; }
   .benefits:before {
     background-image: url("img/pattern2.svg");
-    background-size: 175px 175px;
+    background-size: 180px 180px;
     background-repeat: repeat;
     display: inline-block;
     width: 108%;
@@ -293,7 +293,7 @@ header h1:before, header h1:after {
     @media (max-width: 600px) {
       .benefits:before {
         background-image: url("img/pattern2.svg");
-        background-size: 175px 175px;
+        background-size: 180px 180px;
         background-repeat: repeat;
         display: inline-block;
         width: 108%;
@@ -326,7 +326,7 @@ header h1:before, header h1:after {
   position: relative; }
   .requirements:before {
     background-image: url("img/pattern1.svg");
-    background-size: 175px 175px;
+    background-size: 180px 180px;
     background-repeat: repeat;
     display: inline-block;
     width: 108%;
@@ -337,7 +337,7 @@ header h1:before, header h1:after {
     @media (max-width: 600px) {
       .requirements:before {
         background-image: url("img/pattern1.svg");
-        background-size: 175px 175px;
+        background-size: 180px 180px;
         background-repeat: repeat;
         display: inline-block;
         width: 108%;
