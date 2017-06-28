@@ -437,7 +437,8 @@ Layout Styles
           -moz-transform: rotate(0deg);
           -o-transform: rotate(0deg);
           -ms-transform: rotate(0deg);
-          transform: rotate(0deg); }
+          transform: rotate(0deg);
+          z-index: 4; }
         .wrapper div:first-child {
           -webkit-transform: rotate(-20deg);
           -moz-transform: rotate(-20deg);
@@ -450,7 +451,8 @@ Layout Styles
             -moz-transform: rotate(0deg);
             -o-transform: rotate(0deg);
             -ms-transform: rotate(0deg);
-            transform: rotate(0deg); }
+            transform: rotate(0deg);
+            z-index: 4; }
         .wrapper div:last-child {
           -webkit-transform: rotate(-20deg);
           -moz-transform: rotate(-20deg);
@@ -463,7 +465,8 @@ Layout Styles
             -moz-transform: rotate(0deg);
             -o-transform: rotate(0deg);
             -ms-transform: rotate(0deg);
-            transform: rotate(0deg); } }
+            transform: rotate(0deg);
+            z-index: 4; } }
     @media (min-width: 880px) {
       .wrapper div {
         width: 73%;
@@ -471,20 +474,23 @@ Layout Styles
         padding: 0px;
         transition: transform .2s linear; }
         .wrapper div:hover {
-          transform: rotate(0deg); }
+          transform: rotate(0deg);
+          z-index: 4; }
         .wrapper div:first-child {
           transform: rotate(-15deg);
           padding: 0px 20px;
           z-index: 2;
           transition: transform .2s linear; }
           .wrapper div:first-child:hover {
-            transform: rotate(0deg); }
+            transform: rotate(0deg);
+            z-index: 4; }
         .wrapper div:last-child {
           transform: rotate(-15deg);
           padding: 0px;
           transition: transform .2s linear; }
           .wrapper div:last-child:hover {
-            transform: rotate(0deg); } }
+            transform: rotate(0deg);
+            z-index: 4; } }
 
 footer {
   position: absolute;
@@ -652,6 +658,9 @@ a.zen-github {
 .main > div > p, .intro > div > p {
   padding: 0px 20px; }
 
+.main > div > p:last-child, .intro > div > p:last-child {
+  padding-bottom: 10px; }
+
 @media (min-width: 880px) {
   .sidebar {
     position: fixed;
@@ -661,7 +670,8 @@ a.zen-github {
     width: 27%; }
 
   .design-archives {
-    transform: rotate(15deg); }
+    transform: rotate(15deg);
+    z-index: 0; }
 
   .main div {
     display: inline-block;
@@ -707,24 +717,23 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 3em;
+  margin-bottom: 0px;
   /*margin-bottom: 0px;  TODO: WILL COME BACK TO THIS */ }
   @media (max-width: 600px) {
     h1 {
       font-size: 2.9em;
-      margin-bottom: 15px; } }
+      margin-bottom: -5px; } }
   @media (max-width: 480px) {
     h1 {
       font-size: 1.8em;
       margin-top: 40px; } }
 
 header h2 {
-  margin-top: -25px; }
+  margin-top: 0px; }
 
 header, .summary {
   padding-top: 5px;
   background-color: #ffd528;
-  margin-right: -21px;
-  margin-left: -21px;
   padding-left: 21px;
   padding-right: 21px; }
 
@@ -739,7 +748,8 @@ header, .summary {
   background-image: none; }
 
 .preamble h3, .main h3 {
-  font-size: 2em; }
+  font-size: 2em;
+  margin-bottom: 5px; }
 
 .sidebar {
   background: url("styleguide/assets/Pattern.svg");

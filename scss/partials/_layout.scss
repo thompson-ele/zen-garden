@@ -56,6 +56,7 @@ Layout Styles
                         transition: transform .2s linear;
                         &:hover{
                             @include prefix(transform, "rotate(0deg)");
+                            z-index:4;
                         }
 			
 			&:first-child {
@@ -63,6 +64,7 @@ Layout Styles
                                 transition: transform .2s linear;
                                 &:hover{
                                     @include prefix(transform, "rotate(0deg)");
+                                    z-index:4;
                                 }
 			}
 			
@@ -71,6 +73,7 @@ Layout Styles
                                 transition: transform .2s linear;
                                 &:hover{
                                     @include prefix(transform, "rotate(0deg)");
+                                    z-index:4;
                                 }
 			}
 		}
@@ -82,6 +85,7 @@ Layout Styles
                         transition: transform .2s linear;
                         &:hover{
                             transform: rotate(0deg);
+                            z-index:4;
                         }
 			&:first-child {
 				transform: rotate(-15deg);
@@ -90,6 +94,7 @@ Layout Styles
                                 transition: transform .2s linear;
                                 &:hover{
                                     transform: rotate(0deg);
+                                    z-index:4;
                                 }
 			}
 			
@@ -99,6 +104,7 @@ Layout Styles
                             transition: transform .2s linear;
                             &:hover{
                                 transform: rotate(0deg);
+                                z-index:4;
                             }
 			}
 		}
@@ -274,6 +280,10 @@ a.zen-github {
     padding: 0px 20px;
 }
 
+.main > div > p:last-child, .intro > div > p:last-child {
+    padding-bottom: 10px;
+}
+
 @media (min-width:880px){
     .sidebar{
         position: fixed;
@@ -285,6 +295,7 @@ a.zen-github {
 
     .design-archives {
         transform: rotate(15deg);
+        z-index:0;
     }
     
     .main { 
