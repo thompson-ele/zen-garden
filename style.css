@@ -96,7 +96,7 @@ header h1:before, header h1:after {
     content: ""; }
 
   #zen-benefits h3:after {
-    background-image: url("img/pattern2.svg");
+    background-image: url("img/pattern3.svg");
     background-size: 180px 180px;
     background-repeat: repeat;
     display: inline-block;
@@ -281,7 +281,7 @@ header h1:before, header h1:after {
 .benefits {
   position: relative; }
   .benefits:before {
-    background-image: url("img/pattern2.svg");
+    background-image: url("img/pattern3.svg");
     background-size: 180px 180px;
     background-repeat: repeat;
     display: inline-block;
@@ -292,7 +292,7 @@ header h1:before, header h1:after {
     height: 300px; }
     @media (max-width: 600px) {
       .benefits:before {
-        background-image: url("img/pattern2.svg");
+        background-image: url("img/pattern3.svg");
         background-size: 180px 180px;
         background-repeat: repeat;
         display: inline-block;

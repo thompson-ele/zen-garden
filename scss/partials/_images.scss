@@ -60,7 +60,7 @@ header h1:before, header h1:after {
 
     #zen-benefits h3 {
        &:after {
-            @include patterns($pattern2, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
+            @include patterns($pattern3, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
             position: absolute;
             top: 0;
             bottom: 0;
@@ -152,10 +152,10 @@ header h1:before, header h1:after {
 .benefits {
     position:relative;
     &:before {
-        @include patterns($pattern2, $pattern-size, $pattern-width, $pattern-margin);
+        @include patterns($pattern3, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
         @media(max-width:600px){
-            @include patterns($pattern2, $pattern-size, $pattern-width, $pattern-margin);
+            @include patterns($pattern3, $pattern-size, $pattern-width, $pattern-margin);
             height: $image-height-sm;
         }
     }
