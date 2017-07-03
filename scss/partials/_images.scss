@@ -46,7 +46,7 @@ header h1:before, header h1:after {
 
     #zen-participation h3 {
         &:before{
-            @include patterns($pattern1, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
+            @include patterns($pattern5, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
             position: absolute;
             top: 0;
             bottom: 0;
@@ -60,7 +60,7 @@ header h1:before, header h1:after {
 
     #zen-benefits h3 {
        &:after {
-            @include patterns($pattern3, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
+            @include patterns($pattern4, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
             position: absolute;
             top: 0;
             bottom: 0;
@@ -75,14 +75,14 @@ header h1:before, header h1:after {
 
     #zen-requirements h3 {
         &:before {
-            @include patterns($pattern1, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
+            @include patterns($pattern3, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
             position: absolute;
             top: 0;
             bottom: 0;
             left:0;
         }
         &:after{
-            @include images($image2, $image-width-lg, $image-height-lg, left);
+            @include images($image5, $image-width-lg, $image-height-lg, left);
         }
     }
 }
@@ -131,10 +131,10 @@ header h1:before, header h1:after {
 .participation {
     position:relative;
     &:before {
-        @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
+        @include patterns($pattern5, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
         @media(max-width:600px){
-            @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
+            @include patterns($pattern5, $pattern-size, $pattern-width, $pattern-margin);
             height: $image-height-sm;
         }
     }
@@ -152,10 +152,10 @@ header h1:before, header h1:after {
 .benefits {
     position:relative;
     &:before {
-        @include patterns($pattern3, $pattern-size, $pattern-width, $pattern-margin);
+        @include patterns($pattern4, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
         @media(max-width:600px){
-            @include patterns($pattern3, $pattern-size, $pattern-width, $pattern-margin);
+            @include patterns($pattern4, $pattern-size, $pattern-width, $pattern-margin);
             height: $image-height-sm;
         }
     }
@@ -167,21 +167,21 @@ header h1:before, header h1:after {
     }
 }
 
-/* Section 5: ??? Kitten */
+/* Section 5: Dumbbell Kitten */
 .requirements {
     position:relative;
     &:before {
-        @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
+        @include patterns($pattern3, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
         @media(max-width:600px){
-            @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
+            @include patterns($pattern3, $pattern-size, $pattern-width, $pattern-margin);
             height: $image-height-sm;
         }
     }
     &:after{
-        @include images($image2, $image-width, $image-height, top);
+        @include images($image5, $image-width, $image-height, top);
         @media(max-width:600px){
-            @include images($image2, $image-width-sm, $image-height-sm, top);
+            @include images($image5, $image-width-sm, $image-height-sm, top);
         }
     }
 } 
