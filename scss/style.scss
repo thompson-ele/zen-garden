@@ -17,8 +17,11 @@ h1, h2, h3, h4{
     margin-top: -35px;
 }
 
-.main > div{
-    border-top: 1px solid black;
+@media (min-width:880px){
+    .preamble, .explanation, .participation, .benefits {
+        background: /* gradient can be an image */ linear-gradient(to right, #fff 0%, #fff 29%, #446cb4 34%, #446cb4 66%,  #fff 71%, #fff 100%) left bottom no-repeat;
+        background-size: 100% 3px;  
+    }
 }
 
 h1 {
