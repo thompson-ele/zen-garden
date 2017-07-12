@@ -36,7 +36,7 @@ header h1:before, header h1:after {
     content: "";
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 3px;
     left: 0; }
   #zen-preamble h3:after {
     background-image: url("styleguide/assets/kittens/kitten-barbell.svg");
@@ -58,8 +58,8 @@ header h1:before, header h1:after {
     padding: 0 0;
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 3px;
+    bottom: 3px;
     right: 0; }
   #zen-explanation h3:before {
     background-image: url("styleguide/assets/kittens/kitten-leotard.svg");
@@ -82,8 +82,8 @@ header h1:before, header h1:after {
     padding: 0 0;
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 4px;
+    bottom: 3px;
     left: 0; }
   #zen-participation h3:after {
     background-image: url("styleguide/assets/kittens/kitten-yoga.svg");
@@ -105,8 +105,8 @@ header h1:before, header h1:after {
     padding: 0 0;
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 4px;
+    bottom: 3px;
     right: 0; }
   #zen-benefits h3:before {
     background-image: url("img/kitten-kettlebell.svg");
@@ -129,8 +129,8 @@ header h1:before, header h1:after {
     padding: 0 0;
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 4px;
+    bottom: 3px;
     left: 0; }
   #zen-requirements h3:after {
     background-image: url("img/kitten-dumbbell.svg");
@@ -657,9 +657,9 @@ a.zen-github {
 .main > div > p, .intro > div > p {
   padding: 0px 20px; }
 
-.main > div > p:last-child, .intro > div > p:last-child {
-  padding-bottom: 10px; }
-
+@media (max-width: 880px) {
+  .main > div > p:last-child, .intro > div > p:last-child {
+    padding-bottom: 30px; } }
 @media (min-width: 880px) {
   .sidebar {
     position: fixed;
@@ -716,10 +716,12 @@ h1, h2, h3, h4 {
 
 .intro {
   margin-top: -35px; }
+
 @media (min-width: 880px) {
   .preamble, .explanation, .participation, .benefits {
     background: linear-gradient(to right, #fff 0%, #fff 29%, #446cb4 34%, #446cb4 66%, #fff 71%, #fff 100%) left bottom no-repeat;
-    background-size: 100% 3px; } }
+    background-size: 100% 3px;
+    margin-bottom: -3px; } }
 h1 {
   font-size: 3em;
   margin-bottom: 0px;
@@ -755,7 +757,10 @@ header, .summary {
 .preamble h3, .main h3 {
   font-size: 2em;
   margin-bottom: 5px;
-  margin-top: 5px; }
+  margin-top: 35px; }
+  @media (min-width: 880px) {
+    .preamble h3, .main h3 {
+      margin-top: 5px; } }
 
 .sidebar {
   background: url("styleguide/assets/Pattern.svg");

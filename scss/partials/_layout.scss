@@ -278,9 +278,11 @@ a.zen-github {
 .main > div > p, .intro > div > p {
     padding: 0px 20px;
 }
-
-.main > div > p:last-child, .intro > div > p:last-child {
-    padding-bottom: 10px;
+    
+@media (max-width:880px){
+    .main > div > p:last-child, .intro > div > p:last-child {
+        padding-bottom: 30px;
+    }
 }
 
 @media (min-width:880px){

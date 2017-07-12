@@ -21,6 +21,7 @@ h1, h2, h3, h4{
     .preamble, .explanation, .participation, .benefits {
         background: /* gradient can be an image */ linear-gradient(to right, #fff 0%, #fff 29%, #446cb4 34%, #446cb4 66%,  #fff 71%, #fff 100%) left bottom no-repeat;
         background-size: 100% 3px;  
+        margin-bottom:-3px;
     }
 }
 
@@ -67,7 +68,10 @@ header, .summary{
 .preamble h3, .main h3 {
     font-size: 2em;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 35px;
+    @media (min-width:880px){
+        margin-top:5px;
+    }
 }
 
 .sidebar{
