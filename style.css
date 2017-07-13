@@ -486,7 +486,7 @@ a.zen-github {
   border-bottom: 35px solid #8cce7a; }
 
 .zen-accessibility:hover:before {
-  background: #9ce0f8; }
+  background: #af99c8; }
 
 .zen-github:hover:before {
   background: #e57c7c; }
@@ -564,7 +564,7 @@ a.zen-github {
   width: 34px;
   height: 49px;
   padding-top: 10px;
-  background: #63cdf4;
+  background: #9072b3;
   z-index: -1;
   position: absolute;
   -webkit-transform: rotate(114deg);
