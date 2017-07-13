@@ -692,6 +692,9 @@ header, .summary {
 .summary {
   margin-top: -20px;
   padding-bottom: 1px; }
+  @media (max-width: 880px) {
+    .summary {
+      margin-bottom: -25px; } }
 
 .preamble {
   padding-bottom: 5px; }
