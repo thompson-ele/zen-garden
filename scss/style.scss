@@ -66,9 +66,10 @@ header, .summary{
 
 .sidebar{
     background: url($sidebar-image);
-    background-position: -14px -12px;
+    background-position: -15px -12px;
     margin-bottom: 10px;
     overflow: hidden;
+    background-size: 260px;
 	ul {
             padding-left: 0;
 
@@ -103,5 +104,4 @@ footer a {
             color:black;
 	}
 }
-
 

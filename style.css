@@ -710,9 +710,10 @@ header, .summary {
 
 .sidebar {
   background: url("styleguide/assets/Pattern.svg");
-  background-position: -14px -12px;
+  background-position: -15px -12px;
   margin-bottom: 10px;
-  overflow: hidden; }
+  overflow: hidden;
+  background-size: 260px; }
   .sidebar ul {
     padding-left: 0; }
     .sidebar ul li {
