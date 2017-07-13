@@ -17,28 +17,17 @@ h1, h2, h3, h4{
     margin-top: -35px;
 }
 
-@media (min-width:880px){
-    .preamble, .explanation, .participation, .benefits {
-        background: /* gradient can be an image */ linear-gradient(to right, #fff 0%, #fff 29%, #446cb4 34%, #446cb4 66%,  #fff 71%, #fff 100%) left bottom no-repeat;
-        background-size: 100% 3px;  
-        margin-bottom:-3px;
-    }
-}
-
 h1 {
     font-size: 3em;
     margin-bottom: 0px;
-    /*margin-bottom: 0px;  TODO: WILL COME BACK TO THIS */
-    
-    @media (max-width: 600px){
-        font-size: 2.9em;
-        margin-bottom: -5px;
-    }
-    
-    @media (max-width: 480px){
-        font-size: 1.8em;
-        margin-top: 40px;
-    }
+        @include breakpoint(medium){
+            font-size: 2.9em;
+            margin-bottom: -5px;
+        }
+        @include breakpoint(small){
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
 }
 
 header h2 {
@@ -62,16 +51,17 @@ header, .summary{
 }
 
 .preamble h3:before, .main div h3:before, .main div h3:after{
-	background-image: none;
+    background-image: none;
 }
 
 .preamble h3, .main h3 {
     font-size: 2em;
     margin-bottom: 5px;
     margin-top: 35px;
-    @media (min-width:880px){
-        margin-top:5px;
-    }
+    padding: 0px 30px;
+        @include breakpoint(large){
+            margin-top:5px;
+        }
 }
 
 .sidebar{
@@ -79,44 +69,38 @@ header, .summary{
     background-position: -14px -12px;
     margin-bottom: 10px;
     overflow: hidden;
-	
 	ul {
-		padding-left: 0;
-		
-		li {
-			list-style: none;
-		}
+            padding-left: 0;
+
+            li {
+                list-style: none;
+            }
 	}
 }
 
 a {
     color: $sidebar;
-	
 	&:visited{
-		color:$main-4;
+            color:$main-4;
 	}
-	
 	&:hover{
-		color: $main-1;
+            color: $main-1;
 	}
-	
 	&:active{
-		color: $extra-5
+            color: $extra-5
 	}
 }
 
 footer a {
     color: black;
 	&:visited{
-		color:black;
-	}
-	
+            color:black;
+	}	
 	&:hover{
-		color: black;
+            color: black;
 	}
-	
 	&:active{
-		color:black;
+            color:black;
 	}
 }
 

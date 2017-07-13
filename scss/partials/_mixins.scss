@@ -1,13 +1,3 @@
-/*@mixin images($url, $width, $height, $width2, $height2){
-    background-image: url($url);
-    background-size: $width $height;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: $width2;
-    height: $height2;
-    content: "";
-}*/
-
 // DEFINES IMG URL, PATTERN BACKGROUND URL, AND WIDTH AND HEIGHT OF IMAGE
 @mixin patterns($patternURL, $patternSize, $patternWidth, $pattern-margin){
     background-image: url($patternURL);
@@ -55,7 +45,7 @@
 // DEFINES BREAKPOINTS FOR SMALL/MEDIUM/LARGE SIZES
 @mixin breakpoint($break) {
 	@if $break == large {
-		@media (max-width: $break-lg) { @content; }
+		@media (min-width: $break-lg) { @content; }
 	}
 	@else if $break == medium {
 		@media (max-width: $break-md) { @content; }

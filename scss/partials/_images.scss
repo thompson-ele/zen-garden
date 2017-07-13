@@ -2,21 +2,7 @@
 Image Styles
 ========================================================================== */
 
-/* TODO: ADD IN PATTERN/MAKE HEADING LOOK FANCIER
-header h1:before, header h1:after {
-    @include images($logo, $logoW, $logoH, $logoW2, $logoH2);
-    vertical-align: middle;
-    
-    @media(max-width:600px){
-        @include images($logo, 55px, 55px, 55px, 52px);
-    }
-    
-    @media (max-width: 480px){
-        @include images($logo, 40px, 40px, 40px, 48px);
-    }
-}*/
-
-@media (min-width:880px){
+@include breakpoint(large){
     #zen-preamble h3 {
         &:before {
             @include patterns($pattern1, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
@@ -90,98 +76,98 @@ header h1:before, header h1:after {
 /* Section 1: Barbell Kitten */
 .preamble {
     position:relative;
+    text-align:left;
     &:before {
         @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
-        @media(max-width:600px){
-            @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
-            height: $image-height-sm;
-        }
+            @include breakpoint(medium){
+                height: $image-height-sm;
+            }
     }
     &:after{
         @include images($image1, $image-width, $image-height, top);
-        @media(max-width:600px){
-            @include images($image1, $image-width-sm, $image-height-sm, top);
-        }
+            @include breakpoint(medium){
+                @include images($image1, $image-width-sm, $image-height-sm, top);
+            }
     }
 }
 
 /* Section 2: Aerobics Kitten */
 .explanation{
     position:relative;
+    text-align:right;
     &:before {
         @include patterns($pattern2, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
-        @media(max-width:600px){
-            @include patterns($pattern2, $pattern-size, $pattern-width, $pattern-margin);
-            height: $image-height-sm;
-        }
+            @include breakpoint(medium){
+                height: $image-height-sm;
+            }
     }
     &:after{
         @include images($image2, $image-width, $image-height, top);
         height: $image-height;
-        @media(max-width:600px){
-            @include images($image2, $image-width-sm, $image-height-sm, top);
-            height: $image-height-sm;
-        }
+            @include breakpoint(medium){
+                @include images($image2, $image-width-sm, $image-height-sm, top);
+                height: $image-height-sm;
+            }
     }
 }
 
 /* Section 3: Yoga Kitten */
 .participation {
     position:relative;
+    text-align:left;
     &:before {
         @include patterns($pattern5, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
-        @media(max-width:600px){
-            @include patterns($pattern5, $pattern-size, $pattern-width, $pattern-margin);
-            height: $image-height-sm;
-        }
+            @include breakpoint(medium){
+                height: $image-height-sm;
+            }
     }
     &:after{
         @include images($image3, $image-width, $image-height, top);
         height: $image-height;
-        @media(max-width:600px){
-            @include images($image3, $image-width-sm, $image-height-sm, top);
-            height: $image-height-sm;
-        }
+            @include breakpoint(medium){
+                @include images($image3, $image-width-sm, $image-height-sm, top);
+                height: $image-height-sm;
+            }
     }
 }
 
 /* Section 4: Kettlebell Kitten */
 .benefits {
     position:relative;
+    text-align:right;
     &:before {
         @include patterns($pattern4, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
-        @media(max-width:600px){
-            @include patterns($pattern4, $pattern-size, $pattern-width, $pattern-margin);
-            height: $image-height-sm;
-        }
+            @include breakpoint(medium){
+                height: $image-height-sm;
+            }
     }
     &:after{
         @include images($image4, $image-width, $image-height, top);
-        @media(max-width:600px){
-            @include images($image4, $image-width-sm, $image-height-sm, top);
-        }
+            @include breakpoint(medium){
+                @include images($image4, $image-width-sm, $image-height-sm, top);
+            }
     }
 }
 
 /* Section 5: Dumbbell Kitten */
 .requirements {
     position:relative;
+    text-align:left;
     &:before {
         @include patterns($pattern3, $pattern-size, $pattern-width, $pattern-margin);
         height: $image-height;
-        @media(max-width:600px){
-            @include patterns($pattern3, $pattern-size, $pattern-width, $pattern-margin);
-            height: $image-height-sm;
-        }
+            @include breakpoint(medium){
+                height: $image-height-sm;
+            }
     }
     &:after{
         @include images($image5, $image-width, $image-height, top);
-        @media(max-width:600px){
-            @include images($image5, $image-width-sm, $image-height-sm, top);
-        }
+            @include breakpoint(medium){
+                @include images($image5, $image-width-sm, $image-height-sm, top);
+            }
     }
 } 

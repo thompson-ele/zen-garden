@@ -12,102 +12,97 @@ Layout Styles
     justify-content: space-around;
     padding-bottom: 70px;
 	
-	@media (max-width:480px){
-		flex-wrap: wrap;
+	@include breakpoint(small){
+            flex-wrap: wrap;
 	}
         
-	@media (min-width:880px) {
-        flex-wrap: wrap;
-        align-content: space-around;
-        height: 100vh;
+	@include breakpoint(large){
+            flex-wrap: wrap;
+            align-content: space-around;
+            height: 100vh;
 	}
 	
 	/*----- SIDEBAR -----*/
 	div {
-		width: 25%;
-		background: white;
-		border: 5px solid $sidebar;
-		padding: 10px 15px;
-		align-self: center;
-		transition: transform .2s linear;
+            width: 25%;
+            background: white;
+            border: 5px solid $sidebar;
+            padding: 10px 15px;
+            align-self: center;
+            transition: transform .2s linear;
 		&:first-child {
-			@include prefix(transform, "rotate(-10deg)");
-			padding: 0px 35px;
-			align-self: flex-start;
-                        transition: transform .2s linear;
+                    @include prefix(transform, "rotate(-10deg)");
+                    padding: 0px 35px;
+                    align-self: flex-start;
+                    transition: transform .2s linear;
                         &:hover{
                             @include prefix(transform, "rotate(0deg)");
                         }
 		}
-		
 		&:last-child {
-			@include prefix(transform, "rotate(10deg)");
-                        padding: 10px 15px;
-                        transition: transform .2s linear;
+                    @include prefix(transform, "rotate(10deg)");
+                    padding: 10px 15px;
+                    transition: transform .2s linear;
                         &:hover{
                             @include prefix(transform, "rotate(0deg)");
                         }
 		}
-                
-		@media (max-width:480px){
-			width: 50%;
-			@include prefix(transform, "rotate(20deg)");
-			margin-bottom: 30px;
+                    @include breakpoint(small){
+                        width: 50%;
+                        @include prefix(transform, "rotate(20deg)");
+                        margin-bottom: 30px;
                         transition: transform .2s linear;
-                        &:hover{
-                            @include prefix(transform, "rotate(0deg)");
-                            z-index:4;
-                        }
-			
-			&:first-child {
-				@include prefix(transform, "rotate(-20deg)");
+                            &:hover{
+                                @include prefix(transform, "rotate(0deg)");
+                                z-index:4;
+                            }			
+                            &:first-child {
+                                @include prefix(transform, "rotate(-20deg)");
                                 transition: transform .2s linear;
-                                &:hover{
-                                    @include prefix(transform, "rotate(0deg)");
-                                    z-index:4;
-                                }
-			}
-			
-			&:last-child {
-				@include prefix(transform, "rotate(-20deg)");
+                                    &:hover{
+                                        @include prefix(transform, "rotate(0deg)");
+                                        z-index:4;
+                                    }
+                            }			
+                            &:last-child {
+                                @include prefix(transform, "rotate(-20deg)");
                                 transition: transform .2s linear;
-                                &:hover{
-                                    @include prefix(transform, "rotate(0deg)");
-                                    z-index:4;
-                                }
-			}
-		}
+                                    &:hover{
+                                        @include prefix(transform, "rotate(0deg)");
+                                        z-index:4;
+                                    }
+                            }
+                    }
 		
-		@media (min-width:880px){
-			width: 73%;
-			background: white;
-			padding: 0px;
+                    @include breakpoint(large){
+                        width: 73%;
+                        background: white;
+                        padding: 0px;
                         transition: transform .2s linear;
-                        &:hover{
-                            transform: rotate(0deg);
-                            z-index:4;
-                        }
-			&:first-child {
-				transform: rotate(-15deg);
-				padding: 0px 20px;
-				z-index:2;
-                                transition: transform .2s linear;
-                                &:hover{
-                                    transform: rotate(0deg);
-                                    z-index:4;
-                                }
-			}
-			
-			&:last-child {
-                            transform: rotate(-15deg);
-                            padding: 0px;
-                            transition: transform .2s linear;
                             &:hover{
                                 transform: rotate(0deg);
                                 z-index:4;
                             }
-			}
-		}
+                            &:first-child {
+                                transform: rotate(-15deg);
+                                padding: 0px 20px;
+                                z-index:2;
+                                transition: transform .2s linear;
+                                    &:hover{
+                                        transform: rotate(0deg);
+                                        z-index:4;
+                                    }
+                            }
+                            &:last-child {
+                                transform: rotate(-15deg);
+                                padding: 0px;
+                                transition: transform .2s linear;
+                                    &:hover{
+                                        transform: rotate(0deg);
+                                        z-index:4;
+                                    }
+                            }
+                    }
 	}
 } 
 
@@ -119,8 +114,7 @@ footer {
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: $headerFooter;
-	
-	@media (min-width:880px) {
+	@include breakpoint(large){
 		position: relative;
 	}
 }
@@ -130,21 +124,20 @@ a.zen-validate-html, a.zen-validate-css, a.zen-license, a.zen-accessibility, a.z
     z-index: 0;
     font-family: $header-font;
     margin-right: 75px;
-    @media (max-width:480px){
-        margin-right: 35px;
-    }
-    @media (min-width: 480px) and (max-width: 600px){
-        margin-right: 55px;
-    }
+        @include breakpoint(small){
+            margin-right: 35px;
+        }
+        @media (min-width: 480px) and (max-width: 600px){
+            margin-right: 55px;
+        }
 }
 
 a.zen-accessibility{
     bottom: 3px;
     right: 17px;
-    
-    @media (max-width: 480px){
-        right: 13px;
-    }
+       @include breakpoint(small){
+            right: 13px;
+        }
 }
 
 a.zen-validate-html {
@@ -196,7 +189,7 @@ a.zen-github {
     border-top: none;
     position: absolute;
     z-index: -1;
-	@include prefix(transform, "rotate(-10deg)");
+    @include prefix(transform, "rotate(-10deg)");
 }
 
 .zen-validate-css:before{
@@ -207,14 +200,13 @@ a.zen-github {
     width: 40px;
     height: 40px;
     background: #446cb4;
-	@include prefix(border-radius, "50px");
+    @include prefix(border-radius, "50px");
     z-index: -1;
     border: none;
     position: absolute;
-    
-    @media (max-width: 480px){
-        right: -5px;
-    }
+        @include breakpoint(small){
+            right: -5px;
+        }
 }
 
 .zen-license:before{
@@ -231,12 +223,11 @@ a.zen-github {
     height: 0;
     width: 45px;
     z-index: -1;
-	@include prefix(transform, "rotate(5deg)");
-    
-    @media (max-width: 480px){
-        right: -10px;
-        width: 30px;
-    }
+    @include prefix(transform, "rotate(5deg)");
+        @include breakpoint(small){
+            right: -10px;
+            width: 30px;
+        }
 }
 
 .zen-accessibility:before{
@@ -250,7 +241,7 @@ a.zen-github {
     background: #63cdf4;
     z-index: -1;
     position: absolute;
-	@include prefix(transform, "rotate(114deg)");
+    @include prefix(transform, "rotate(114deg)");
 }
 
 .zen-github:before{
@@ -267,21 +258,24 @@ a.zen-github {
     -moz-border-radius: 100px / 50px;
     -webkit-border-radius: 100px / 50px;
     border-radius: 100px / 50px;
-	@include prefix(transform, "rotate(15deg)");
-    
-    @media (max-width: 480px){
-        width: 70px;
-        right: -34px;
-    }
+    @include prefix(transform, "rotate(15deg)");  
+        @include breakpoint(small){
+            width: 70px;
+            right: -34px;
+        }
 }
 
 .main > div > p, .intro > div > p {
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
     
 @media (max-width:880px){
     .main > div > p:last-child, .intro > div > p:last-child {
         padding-bottom: 30px;
+    }
+    
+    .preamble > div, .main > div{
+        text-align: left;
     }
 }
 
@@ -300,16 +294,15 @@ a.zen-github {
     }
     
     .main { 
-		div {
-        	display: inline-block;
-        	width:100%;
-                //min-height: 320px;
-                padding-top: 5%;
-                padding-bottom: 5%;
-			h3:after {
-				float: right;
-			}
-		}
+        div {
+            display: inline-block;
+            width:100%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+                h3:after {
+                    float: right;
+                }
+        }
     }
     
     .intro, .main {
@@ -319,7 +312,6 @@ a.zen-github {
     
     #zen-preamble{
         width: 100%;
-        //min-height: 320px;
         padding-top: 5%;
         padding-bottom: 5%;
     }
@@ -345,5 +337,11 @@ a.zen-github {
     #zen-benefits {
         padding-top:7%;
         padding-bottom: 7%;
+    }
+    
+    .preamble, .explanation, .participation, .benefits {
+        background: linear-gradient(to right, #fff 0%, #fff 29%, #446cb4 34%, #446cb4 66%,  #fff 71%, #fff 100%) left bottom no-repeat;
+        background-size: 100% 3px;  
+        margin-bottom:-3px;
     }
 }
