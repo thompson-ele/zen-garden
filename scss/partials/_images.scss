@@ -77,7 +77,7 @@ header h1:before, header h1:after {
         &:before {
             @include patterns($pattern3, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
             position: absolute;
-            top: 4px;
+            top: 3px;
             bottom: 0;
             left:0;
         }
