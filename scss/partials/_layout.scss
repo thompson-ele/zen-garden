@@ -299,9 +299,6 @@ a.zen-github {
             width:100%;
             padding-top: 5%;
             padding-bottom: 5%;
-                h3:after {
-                    float: right;
-                }
         }
     }
     
@@ -314,16 +311,6 @@ a.zen-github {
         width: 100%;
         padding-top: 5%;
         padding-bottom: 5%;
-    }
-    
-    .preamble h3:before, .main div h3:before{
-        float: left;
-    }
-    
-    .preamble:before, .preamble:after, .main div:before, .main div:after{
-        background-image: none;
-        width: 0px;
-        height: 0px;
     }
     
     .preamble > *,  .participation > *, .requirements > *{

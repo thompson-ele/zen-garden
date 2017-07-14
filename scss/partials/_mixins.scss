@@ -1,11 +1,10 @@
 // DEFINES IMG URL, PATTERN BACKGROUND URL, AND WIDTH AND HEIGHT OF IMAGE
-@mixin patterns($patternURL, $patternSize, $patternWidth, $pattern-margin){
+@mixin patterns($patternURL, $patternSize, $patternWidth){
     background-image: url($patternURL);
     background-size: $patternSize $patternSize;
     background-repeat: repeat;
     display: inline-block;
     width: $patternWidth;
-    margin-left: $pattern-margin;
     padding: 0 0;
     content: "";
 }

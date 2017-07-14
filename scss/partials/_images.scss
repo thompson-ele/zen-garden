@@ -2,92 +2,32 @@
 Image Styles
 ========================================================================== */
 
-@include breakpoint(large){
-    #zen-preamble h3 {
-        &:before {
-            @include patterns($pattern1, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
-            position: absolute;
-            top: 0;
-            bottom: 3px;
-            left:0;
-        }
-        &:after{
-            @include images($image1, $image-width-lg, $image-height-lg, left);
-        }
-    }
-
-    #zen-explanation h3 {
-        &:after{
-            @include patterns($pattern2, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
-            position: absolute;
-            top: 3px;
-            bottom: 3px;
-            right:0;
-        }
-        &:before{
-            @include images($image2, $image-width-lg, $image-height-lg, right);
-            z-index:3;
-        }
-    }
-
-    #zen-participation h3 {
-        &:before{
-            @include patterns($pattern5, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
-            position: absolute;
-            top: 4px;
-            bottom: 3px;
-            left:0;
-
-        }
-        &:after {
-            @include images($image3, $image-width-lg, $image-height-lg, left);
-        }
-    }
-
-    #zen-benefits h3 {
-       &:after {
-            @include patterns($pattern4, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
-            position: absolute;
-            top: 4px;
-            bottom: 3px;
-            right:0;
-       }
-       &:before {
-           @include images($image4, $image-width-lg, $image-height-lg, right);
-           z-index:3;
-       }
-       
-    }
-
-    #zen-requirements h3 {
-        &:before {
-            @include patterns($pattern3, $pattern-size, $pattern-width-lg, $pattern-margin-lg);
-            position: absolute;
-            top: 3px;
-            bottom: 0;
-            left:0;
-        }
-        &:after{
-            @include images($image5, $image-width-lg, $image-height-lg, left);
-        }
-    }
-}
-
 /* Section 1: Barbell Kitten */
 .preamble {
     position:relative;
     text-align:left;
     &:before {
-        @include patterns($pattern1, $pattern-size, $pattern-width, $pattern-margin);
+        @include patterns($pattern1, $pattern-size, $pattern-width);
         height: $image-height;
             @include breakpoint(medium){
                 height: $image-height-sm;
+            }
+            @include breakpoint(large){
+                position: absolute;
+                top: 0;
+                bottom: 3px;
+                left:0;
+                width: $pattern-width-lg;
+                height:inherit;
             }
     }
     &:after{
         @include images($image1, $image-width, $image-height, top);
             @include breakpoint(medium){
                 @include images($image1, $image-width-sm, $image-height-sm, top);
+            }
+            @include breakpoint(large){
+                @include images($image1, $image-width-lg, $image-height-lg, left);
             }
     }
 }
@@ -97,18 +37,28 @@ Image Styles
     position:relative;
     text-align:right;
     &:before {
-        @include patterns($pattern2, $pattern-size, $pattern-width, $pattern-margin);
+        @include patterns($pattern2, $pattern-size, $pattern-width);
         height: $image-height;
             @include breakpoint(medium){
                 height: $image-height-sm;
             }
+            @include breakpoint(large){
+                position: absolute;
+                top: 3px;
+                bottom: 3px;
+                right:0;
+                width: $pattern-width-lg;
+                height:inherit;
+            }
+            
     }
     &:after{
-        @include images($image2, $image-width, $image-height, top);
-        height: $image-height;
+        @include images($image2, $image-width, $image-height, bottom);
             @include breakpoint(medium){
-                @include images($image2, $image-width-sm, $image-height-sm, top);
-                height: $image-height-sm;
+                @include images($image2, $image-width-sm, $image-height-sm, bottom);
+            }
+            @include breakpoint(large){
+                @include images($image2, $image-width-lg, $image-height-lg, right);
             }
     }
 }
@@ -118,18 +68,27 @@ Image Styles
     position:relative;
     text-align:left;
     &:before {
-        @include patterns($pattern5, $pattern-size, $pattern-width, $pattern-margin);
+        @include patterns($pattern5, $pattern-size, $pattern-width);
         height: $image-height;
             @include breakpoint(medium){
                 height: $image-height-sm;
             }
+            @include breakpoint(large){
+                position: absolute;
+                top: 3px;
+                bottom: 3px;
+                left:0;
+                width: $pattern-width-lg;
+                height:inherit;
+            }
     }
     &:after{
         @include images($image3, $image-width, $image-height, top);
-        height: $image-height;
             @include breakpoint(medium){
                 @include images($image3, $image-width-sm, $image-height-sm, top);
-                height: $image-height-sm;
+            }
+            @include breakpoint(large){
+                @include images($image3, $image-width-lg, $image-height-lg, left);
             }
     }
 }
@@ -139,16 +98,27 @@ Image Styles
     position:relative;
     text-align:right;
     &:before {
-        @include patterns($pattern4, $pattern-size, $pattern-width, $pattern-margin);
+        @include patterns($pattern4, $pattern-size, $pattern-width);
         height: $image-height;
             @include breakpoint(medium){
                 height: $image-height-sm;
             }
+            @include breakpoint(large){
+                position: absolute;
+                top: 3px;
+                bottom: 3px;
+                right:0;
+                width: $pattern-width-lg;
+                height:inherit;
+            }
     }
     &:after{
-        @include images($image4, $image-width, $image-height, top);
+        @include images($image4, $image-width, $image-height, bottom);
             @include breakpoint(medium){
-                @include images($image4, $image-width-sm, $image-height-sm, top);
+                @include images($image4, $image-width-sm, $image-height-sm, bottom);
+            }
+            @include breakpoint(large){
+                 @include images($image4, $image-width-lg, $image-height-lg, right);
             }
     }
 }
@@ -158,10 +128,18 @@ Image Styles
     position:relative;
     text-align:left;
     &:before {
-        @include patterns($pattern3, $pattern-size, $pattern-width, $pattern-margin);
+        @include patterns($pattern3, $pattern-size, $pattern-width);
         height: $image-height;
             @include breakpoint(medium){
                 height: $image-height-sm;
+            }
+            @include breakpoint(large){
+                position: absolute;
+                top: 3px;
+                bottom: 0;
+                left:0;
+                width: $pattern-width-lg;
+                height:inherit;
             }
     }
     &:after{
@@ -169,5 +147,8 @@ Image Styles
             @include breakpoint(medium){
                 @include images($image5, $image-width-sm, $image-height-sm, top);
             }
+            @include breakpoint(large){
+                 @include images($image5, $image-width-lg, $image-height-lg, left);
+            }
     }
-} 
+}
