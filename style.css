@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+/* Extra Unused Colors
+$extra-1: #63cdf4;
+$extra-3: #ec2026;
+$extra-4: #fbaa31;
+$extra-6: #66c3a2;
+$extra-7: #a0d3a2;
+$extra-8: #cae9e6;
+$extra-9: #925223;
+$extra-10: #85a1d3;
+$extra-11: #f9f5cf;
+$extra-12: #fef2dc;*/
 /* ==========================================================================
 Image Styles
 ========================================================================== */
@@ -423,59 +434,33 @@ a.zen-validate-html, a.zen-validate-css, a.zen-license, a.zen-accessibility, a.z
     a.zen-validate-html, a.zen-validate-css, a.zen-license, a.zen-accessibility, a.zen-github {
       margin-right: 55px; } }
 
-a.zen-accessibility {
-  bottom: 3px;
-  right: 17px; }
-  @media (max-width: 480px) {
-    a.zen-accessibility {
-      right: 13px; } }
-
-a.zen-validate-html {
+.zen-validate-html {
   margin-left: -30px; }
-
-a.zen-license {
-  top: 7px;
-  left: 9px; }
-
-a.zen-github {
-  margin-right: 0px; }
-
-.zen-validate-html:hover:before {
-  border-bottom: 35px solid #eeb6d4; }
+  .zen-validate-html:hover:before {
+    border-bottom: 35px solid #eeb6d4; }
+  .zen-validate-html:before {
+    content: "";
+    display: block;
+    padding: 0;
+    top: -10px;
+    right: -21px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 35px solid #e284b6;
+    background: none;
+    border-top: none;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
 
 .zen-validate-css:hover:before {
   background: #708fc9; }
-
-.zen-license:hover:before {
-  border-bottom: 35px solid #8cce7a; }
-
-.zen-accessibility:hover:before {
-  background: #af99c8; }
-
-.zen-github:hover:before {
-  background: #e57c7c; }
-
-.zen-validate-html:before {
-  content: "";
-  display: block;
-  padding: 0;
-  top: -10px;
-  right: -21px;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 35px solid #e284b6;
-  background: none;
-  border-top: none;
-  position: absolute;
-  z-index: -1;
-  -webkit-transform: rotate(-10deg);
-  -moz-transform: rotate(-10deg);
-  -o-transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
-  transform: rotate(-10deg); }
-
 .zen-validate-css:before {
   content: "";
   top: -6px;
@@ -496,70 +481,87 @@ a.zen-github {
     .zen-validate-css:before {
       right: -5px; } }
 
-.zen-license:before {
-  content: "";
-  top: -15px;
-  right: -12px;
-  display: block;
-  background: none;
-  border-top: none;
-  position: absolute;
-  border-bottom: 35px solid #65bc4c;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  height: 0;
-  width: 45px;
-  z-index: -1;
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  -o-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
-  transform: rotate(5deg); }
-  @media (max-width: 480px) {
-    .zen-license:before {
-      right: -10px;
-      width: 30px; } }
+.zen-license {
+  top: 7px;
+  left: 9px; }
+  .zen-license:hover:before {
+    border-bottom: 35px solid #8cce7a; }
+  .zen-license:before {
+    content: "";
+    top: -15px;
+    right: -12px;
+    display: block;
+    background: none;
+    border-top: none;
+    position: absolute;
+    border-bottom: 35px solid #65bc4c;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    height: 0;
+    width: 45px;
+    z-index: -1;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg); }
+    @media (max-width: 480px) {
+      .zen-license:before {
+        right: -10px;
+        width: 30px; } }
 
-.zen-accessibility:before {
-  content: "";
-  display: block;
-  top: -16px;
-  left: 11px;
-  width: 34px;
-  height: 49px;
-  padding-top: 10px;
-  background: #9072b3;
-  z-index: -1;
-  position: absolute;
-  -webkit-transform: rotate(114deg);
-  -moz-transform: rotate(114deg);
-  -o-transform: rotate(114deg);
-  -ms-transform: rotate(114deg);
-  transform: rotate(114deg); }
-
-.zen-github:before {
-  content: "";
-  top: -11px;
-  right: -45px;
-  display: block;
-  border: 0;
-  position: absolute;
-  width: 90px;
-  height: 45px;
-  background: #db4646;
-  z-index: -1;
-  -moz-border-radius: 100px / 50px;
-  -webkit-border-radius: 100px / 50px;
-  border-radius: 100px / 50px;
-  -webkit-transform: rotate(15deg);
-  -moz-transform: rotate(15deg);
-  -o-transform: rotate(15deg);
-  -ms-transform: rotate(15deg);
-  transform: rotate(15deg); }
+.zen-accessibility {
+  bottom: 3px;
+  right: 17px; }
   @media (max-width: 480px) {
-    .zen-github:before {
-      width: 70px;
-      right: -34px; } }
+    .zen-accessibility {
+      right: 13px; } }
+  .zen-accessibility:hover:before {
+    background: #af99c8; }
+  .zen-accessibility:before {
+    content: "";
+    display: block;
+    top: -16px;
+    left: 11px;
+    width: 34px;
+    height: 49px;
+    padding-top: 10px;
+    background: #9072b3;
+    z-index: -1;
+    position: absolute;
+    -webkit-transform: rotate(114deg);
+    -moz-transform: rotate(114deg);
+    -o-transform: rotate(114deg);
+    -ms-transform: rotate(114deg);
+    transform: rotate(114deg); }
+
+.zen-github {
+  margin-right: 0px; }
+  .zen-github:hover:before {
+    background: #e57c7c; }
+  .zen-github:before {
+    content: "";
+    top: -11px;
+    right: -45px;
+    display: block;
+    border: 0;
+    position: absolute;
+    width: 90px;
+    height: 45px;
+    background: #db4646;
+    z-index: -1;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 100px / 50px;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg); }
+    @media (max-width: 480px) {
+      .zen-github:before {
+        width: 70px;
+        right: -34px; } }
 
 .main > div > p, .intro > div > p {
   padding: 0px 30px; }

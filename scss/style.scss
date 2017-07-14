@@ -76,15 +76,15 @@ header, .summary{
 }
 
 a {
-    color: $sidebar;
+    color: $link-color;
 	&:visited{
-            color:$main-4;
+            color: $link-visited;
 	}
 	&:hover{
-            color: $main-1;
+            color: $link-hover;
 	}
 	&:active{
-            color: $extra-5
+            color: $link-active;
 	}
 }
 

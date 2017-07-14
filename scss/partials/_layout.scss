@@ -26,7 +26,7 @@ Layout Styles
 	div {
             width: 25%;
             background: white;
-            border: 5px solid $sidebar;
+            border: 5px solid $borders;
             padding: 10px 15px;
             align-self: center;
             transition: transform .2s linear;
@@ -133,135 +133,133 @@ a.zen-validate-html, a.zen-validate-css, a.zen-license, a.zen-accessibility, a.z
 }
 
 a.zen-accessibility{
-    bottom: 3px;
-    right: 17px;
-       @include breakpoint(small){
-            right: 13px;
+    
+}
+
+
+.zen-validate-html{
+    margin-left: -30px;
+        &:hover:before{
+            border-bottom: 35px solid $footer-btn1-hover;
+        }
+        &:before{
+            content: "";
+            display: block;
+            padding: 0;
+            top: -10px;
+            right: -21px;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 35px solid $footer-btn1;
+            background: none;
+            border-top: none;
+            position: absolute;
+            z-index: -1;
+            @include prefix(transform, "rotate(-10deg)");
         }
 }
 
-a.zen-validate-html {
-    margin-left: -30px;
+.zen-validate-css{
+    
+        &:hover:before{
+            background: $footer-btn2-hover;  
+        }
+        &:before{
+            content: "";
+            top: -6px;
+            right: 7px;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background: $footer-btn2;
+            @include prefix(border-radius, "50px");
+            z-index: -1;
+            border: none;
+            position: absolute;
+                @include breakpoint(small){
+                    right: -5px;
+                }
+        }
 }
 
-a.zen-license{
+.zen-license {
     top: 7px;
     left: 9px;
+        &:hover:before{
+            border-bottom: 35px solid $footer-btn3-hover;
+        }
+        &:before{
+            content: "";
+            top: -15px;
+            right: -12px;
+            display: block;
+            background: none;
+            border-top: none;
+            position: absolute;
+            border-bottom: 35px solid $footer-btn3;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            height: 0;
+            width: 45px;
+            z-index: -1;
+            @include prefix(transform, "rotate(5deg)");
+                @include breakpoint(small){
+                    right: -10px;
+                    width: 30px;
+                }
+        }
 }
 
-a.zen-github {
+.zen-accessibility{
+    bottom: 3px;
+    right: 17px;
+        @include breakpoint(small){
+            right: 13px;
+        }
+        &:hover:before{
+            background: $footer-btn4-hover;
+        }
+        &:before{
+            content: "";
+            display: block;
+            top: -16px;
+            left: 11px;
+            width: 34px;
+            height: 49px;
+            padding-top: 10px;
+            background: $footer-btn4;
+            z-index: -1;
+            position: absolute;
+            @include prefix(transform, "rotate(114deg)");
+        }
+}
+
+.zen-github{
     margin-right: 0px;
-}
-
-.zen-validate-html:hover:before{
-    border-bottom: 35px solid #eeb6d4;
-}
-
-.zen-validate-css:hover:before{
-     background:#708fc9;  
-}
-
-.zen-license:hover:before{
-    border-bottom: 35px solid #8cce7a;
-}
-
-.zen-accessibility:hover:before{
-    background: #af99c8;
-}
-
-.zen-github:hover:before{
-    background:#e57c7c;
-}
-
-
-.zen-validate-html:before{
-    content: "";
-    display: block;
-    padding: 0;
-    top: -10px;
-    right: -21px;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 35px solid #e284b6;
-    background: none;
-    border-top: none;
-    position: absolute;
-    z-index: -1;
-    @include prefix(transform, "rotate(-10deg)");
-}
-
-.zen-validate-css:before{
-    content: "";
-    top: -6px;
-    right: 7px;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: #446cb4;
-    @include prefix(border-radius, "50px");
-    z-index: -1;
-    border: none;
-    position: absolute;
-        @include breakpoint(small){
-            right: -5px;
+        &:hover:before{
+            background: $footer-btn5-hover;
         }
-}
-
-.zen-license:before{
-    content: "";
-    top: -15px;
-    right: -12px;
-    display: block;
-    background: none;
-    border-top: none;
-    position: absolute;
-    border-bottom: 35px solid #65bc4c;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    height: 0;
-    width: 45px;
-    z-index: -1;
-    @include prefix(transform, "rotate(5deg)");
-        @include breakpoint(small){
-            right: -10px;
-            width: 30px;
-        }
-}
-
-.zen-accessibility:before{
-    content: "";
-    display: block;
-    top: -16px;
-    left: 11px;
-    width: 34px;
-    height: 49px;
-    padding-top: 10px;
-    background: #9072b3;
-    z-index: -1;
-    position: absolute;
-    @include prefix(transform, "rotate(114deg)");
-}
-
-.zen-github:before{
-    content: "";
-    top: -11px;
-    right: -45px;
-    display: block;
-    border: 0;
-    position: absolute;
-    width: 90px;
-    height: 45px;
-    background: #db4646;
-    z-index: -1;
-    -moz-border-radius: 100px / 50px;
-    -webkit-border-radius: 100px / 50px;
-    border-radius: 100px / 50px;
-    @include prefix(transform, "rotate(15deg)");  
-        @include breakpoint(small){
-            width: 70px;
-            right: -34px;
+        &:before{
+            content: "";
+            top: -11px;
+            right: -45px;
+            display: block;
+            border: 0;
+            position: absolute;
+            width: 90px;
+            height: 45px;
+            background: $footer-btn5;
+            z-index: -1;
+            -moz-border-radius: 100px / 50px;
+            -webkit-border-radius: 100px / 50px;
+            border-radius: 100px / 50px;
+            @include prefix(transform, "rotate(15deg)");  
+                @include breakpoint(small){
+                    width: 70px;
+                    right: -34px;
+                }
         }
 }
 
@@ -327,7 +325,7 @@ a.zen-github {
     }
     
     .preamble, .explanation, .participation, .benefits {
-        background: linear-gradient(to right, #fff 0%, #fff 29%, #446cb4 34%, #446cb4 66%,  #fff 71%, #fff 100%) left bottom no-repeat;
+        background: linear-gradient(to right, #fff 0%, #fff 29%, $borders 34%, $borders 66%,  #fff 71%, #fff 100%) left bottom no-repeat;
         background-size: 100% 3px;  
         margin-bottom:-3px;
     }
